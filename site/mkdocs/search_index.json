@@ -2,12 +2,12 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Peer Review Platform\n\n\nThis is a living document.\n\n\nWhat is it?\n\n\nThe peer review platform is a web application that allows students completing group work to evaluate each other's contribution to the group using a \nrubric\n or by giving a numeric 'grade'. The application is optimised for use with the Blackboard Learn VLE but can be adapted to to any VLE that implements the IMS Global\n Learning Tools Interoperability\n (LTI) standard.  \n\n\nStudents\n\n\nAssessing your group's members using the peer review platform\n\n\nInstructors\n\n\nHow to add the LTI link to your Blackboard Course and configure the tool.\n\n\nTemplates\n\n\nSetting up the ExpressionEngine templates for the peer review platform.\n\n\nInstallation\n\n\nServer installation instructions of ExpressionEngine CMS and the Peer Review Add-on.", 
+            "text": "Peer Review Platform\n\n\nWhat is it?\n\n\nThe peer review platform is a web application that allows students completing group work to evaluate each other's contribution to the group using a \nrubric\n or by giving a numeric 'grade'. The application is optimised for use with the Blackboard Learn VLE but can be adapted to to any VLE that implements the IMS Global\n Learning Tools Interoperability\n (LTI) standard.  \n\n\nStudents\n\n\nAssessing your group's members using the peer review platform\n\n\nInstructors\n\n\nHow to add the LTI link to your Blackboard Course and configure the tool.\n\n\nTemplates\n\n\nSetting up the ExpressionEngine templates for the peer review platform.\n\n\nInstallation\n\n\nServer installation instructions of ExpressionEngine CMS and the Peer Review Add-on.", 
             "title": "Home"
         }, 
         {
             "location": "/#peer-review-platform", 
-            "text": "This is a living document.", 
+            "text": "", 
             "title": "Peer Review Platform"
         }, 
         {
