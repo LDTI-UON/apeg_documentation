@@ -1,0 +1,229 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Peer Review Platform\n\n\nThis is a living document.\n\n\nWhat is it?\n\n\nThe peer review platform is a web application that allows students completing group work to evaluate each other's contribution to the group using a \nrubric\n or by giving a numeric 'grade'. The application is optimised for use with the Blackboard Learn VLE but can be adapted to to any VLE that implements the IMS Global\n Learning Tools Interoperability\n (LTI) standard.  \n\n\nStudents\n\n\nAssessing your group's members using the peer review platform\n\n\nInstructors\n\n\nHow to add the LTI link to your Blackboard Course and configure the tool.\n\n\nTemplates\n\n\nSetting up the ExpressionEngine templates for the peer review platform.\n\n\nInstallation\n\n\nServer installation instructions of ExpressionEngine CMS and the Peer Review Add-on.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/#peer-review-platform", 
+            "text": "This is a living document.", 
+            "title": "Peer Review Platform"
+        }, 
+        {
+            "location": "/#what-is-it", 
+            "text": "The peer review platform is a web application that allows students completing group work to evaluate each other's contribution to the group using a  rubric  or by giving a numeric 'grade'. The application is optimised for use with the Blackboard Learn VLE but can be adapted to to any VLE that implements the IMS Global  Learning Tools Interoperability  (LTI) standard.", 
+            "title": "What is it?"
+        }, 
+        {
+            "location": "/#students", 
+            "text": "Assessing your group's members using the peer review platform", 
+            "title": "Students"
+        }, 
+        {
+            "location": "/#instructors", 
+            "text": "How to add the LTI link to your Blackboard Course and configure the tool.", 
+            "title": "Instructors"
+        }, 
+        {
+            "location": "/#templates", 
+            "text": "Setting up the ExpressionEngine templates for the peer review platform.", 
+            "title": "Templates"
+        }, 
+        {
+            "location": "/#installation", 
+            "text": "Server installation instructions of ExpressionEngine CMS and the Peer Review Add-on.", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/About/", 
+            "text": "About\n\n\nThe peer review platform is a living application developed by Paul Sijpkes.  Paul is a member of the \nBOLD Team\n at the University of Newcastle, Australia.\n\n\nAcknowledgements\n\n\nThanks for all those who have and are continuing to help and support the development and testing of this tool by trialling it in their courses and for having the vision and patience to try something new, or simply to test the pages over and over again!\n\n\nUniversity of Newcastle\n\n\nRobert Zinko, Bonnie McBain, Andrea Cassin, Ramsey Awad, Brid Monahan and the staff of the Joint Medical Program and Tim Connor for starting it all.\n\n\nAnd, of course, the \nBOLD\n testers:\n\n\nAndrew Yardy, Nick Barham, Mali Webb, Rebecca Wotzko and Luke Boulton.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/About/#about", 
+            "text": "The peer review platform is a living application developed by Paul Sijpkes.  Paul is a member of the  BOLD Team  at the University of Newcastle, Australia.", 
+            "title": "About"
+        }, 
+        {
+            "location": "/About/#acknowledgements", 
+            "text": "Thanks for all those who have and are continuing to help and support the development and testing of this tool by trialling it in their courses and for having the vision and patience to try something new, or simply to test the pages over and over again!", 
+            "title": "Acknowledgements"
+        }, 
+        {
+            "location": "/About/#university-of-newcastle", 
+            "text": "Robert Zinko, Bonnie McBain, Andrea Cassin, Ramsey Awad, Brid Monahan and the staff of the Joint Medical Program and Tim Connor for starting it all.  And, of course, the  BOLD  testers:  Andrew Yardy, Nick Barham, Mali Webb, Rebecca Wotzko and Luke Boulton.", 
+            "title": "University of Newcastle"
+        }, 
+        {
+            "location": "/guides/Installation/", 
+            "text": "Installation\n\n\nRequirements\n\n\n\n\nWebServer with PHP 5 or later\n\n\nmySQL Database version 5.5 or later\n\n\nExpressionEngine Core CMS\n\n\nEE LTI Module\n\n\nEE Peer Assessment Plugin\n\n\nGit version control system\n\n\n\n\nSteps\n\n\n\n\n\n\nDownload and install a webserver (Apache is recommended), PHP 5, mySQL, git and \nExpressionEngine Core CMS\n\n\nThere are countless resources on the web to install the above online.  The suggested items are all open source or free\n\n\n\n\n\n\nClone and Install the ExpressionEngine Modules\n  The most up to date version of the application is available on Bitbucket and comes in two parts,\n  the \nEE LTI Module\n and the \nPeer Assessment Plugin\n\n\ngit clone https://sijpkes@bitbucket.org/sijpkes/ee3-lti-module.git\n\n\n\n\n\n\n\nchange the name of the folder to learning_tools_integration\n\n\n\n\n\n\ncopy the entire folder to:\n\n\n/system/users/addons\n\n\n\n\n\n\n\nClone the Peer Assessment Plugin\n\n\ngit clone https://sijpkes@bitbucket.org/sijpkes/lti-peer-assessment.git\n\n\n\n\n\n\n\nRepeat steps 3 \n 4 for the peer assessment module (you don't need to change the folder name)", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/guides/Installation/#installation", 
+            "text": "", 
+            "title": "Installation"
+        }, 
+        {
+            "location": "/guides/Installation/#requirements", 
+            "text": "WebServer with PHP 5 or later  mySQL Database version 5.5 or later  ExpressionEngine Core CMS  EE LTI Module  EE Peer Assessment Plugin  Git version control system", 
+            "title": "Requirements"
+        }, 
+        {
+            "location": "/guides/Installation/#steps", 
+            "text": "Download and install a webserver (Apache is recommended), PHP 5, mySQL, git and  ExpressionEngine Core CMS  There are countless resources on the web to install the above online.  The suggested items are all open source or free    Clone and Install the ExpressionEngine Modules\n  The most up to date version of the application is available on Bitbucket and comes in two parts,\n  the  EE LTI Module  and the  Peer Assessment Plugin  git clone https://sijpkes@bitbucket.org/sijpkes/ee3-lti-module.git    change the name of the folder to learning_tools_integration    copy the entire folder to:  /system/users/addons    Clone the Peer Assessment Plugin  git clone https://sijpkes@bitbucket.org/sijpkes/lti-peer-assessment.git    Repeat steps 3   4 for the peer assessment module (you don't need to change the folder name)", 
+            "title": "Steps"
+        }, 
+        {
+            "location": "/guides/Instructors/", 
+            "text": "Instructors\n\n\nAdding the LTI Link\n\n\nOnce the templates have been setup you will be supplied with the details for the LTI link as it appears in \nBlackboard Learn\n\n\nLTI Link Settings\n\n\nOnce the link has been placed in your course, you can manage settings as an Instructor by clicking the link.  To preview the tool, it is first necessary to \nkeep your preview user\n and subsequently\n\nadd your preview user to a group\n.  Once in student preview, you will then see the group as a \nstudent\n.\n\n\nBlackboard Learn\n\n\n\n\nLTI link URL\n\n\nKey\n\n\nSecret\n\n\nCustomised Parameters\n\n\n\n\n\n\nAdding a Description (Single Line Only)\n\n\nNote that there is a bug in blackboard that does not properly encode multi-line descriptions, so keep your description short and on a single line.\n\n\n\n\nConfiguration\n\n\nTo configure the tool, access on the LTI link created earlier (ensure you are not in preview mode).\n\n\nActivate peer assessment\n\n\nThis feature is primarily for developers and will be removed in future releases\n\n\n\n\nGradebook Syncronisation\n\n\nThe first time you use the tool a message will appear asking if you would like to automatically sync the gradebook. The gradebook is accessed in \nBlackboard Learn via the Grade Center\n. This will update the user list from the Gradebook every time you access the link. Select the appropriate option.  \n\n\n\n\nManually Upload the Student Gradebook\n\n\nIf you choose 'No' for the above option, you will need to manually upload the student list.\n\n\nTo manually upload the student list, first download the \nstudent list from group export\n. Ensure you select the \nGroups and group members\n and \nInclude header row\n options. The file will be emailed to you. You will need to download it from the link in the email.\n\n\n\n\nIn the instructor view, uploadt the csv file using the form.\n\n\n\n\nAdd a Rubric\n\n\nExport a rubric from Blackboard Learn\n that you would like the students to use to assess each other.\n\n\n\n\nUpload the rubric ZIP file into the peer review tool using the form:\n\n\n\nSelect the rubric from the dropdown and Attach. You can use Preview to preview the Rubric.\n\n\nRubrics will \nnot\n attach automatically, ensure you click Attach.\n\n\n\n\nConfigure Student View\n\n\nThere are several configuration options for the student view.\n\n\n\n\nShow grade column\n\n\nstudents can see the grade others have given them\n\n\n\n\n\n\nShow comments\n\n\nstudents can see the comments others have given them\n\n\n\n\n\n\nTurn on self assessment\n\n\nstudents assess their own performance first, they cannot assess others until they have assessed themselves\n\n\nWhen changing this setting you will need to resync the user groups (see \nGradebook Syncronisation\n)\n\n\n\n\n\n\nInclude self in mean score\n\n\nmean score includes the student's own score, for example if there are 5 in the group and the total score the group has given the student is 300 the final score will be 300/5 = 60 rather than 300/4 = 75\n\n\n\n\n\n\nTotal maximum score for assessment\n\n\nused to calculate the percentage score, if you are not using a rubric you can set this here. The rubric total\n  score will override this setting if a rubric is attached", 
+            "title": "Instructors"
+        }, 
+        {
+            "location": "/guides/Instructors/#instructors", 
+            "text": "", 
+            "title": "Instructors"
+        }, 
+        {
+            "location": "/guides/Instructors/#adding-the-lti-link", 
+            "text": "Once the templates have been setup you will be supplied with the details for the LTI link as it appears in  Blackboard Learn", 
+            "title": "Adding the LTI Link"
+        }, 
+        {
+            "location": "/guides/Instructors/#lti-link-settings", 
+            "text": "Once the link has been placed in your course, you can manage settings as an Instructor by clicking the link.  To preview the tool, it is first necessary to  keep your preview user  and subsequently add your preview user to a group .  Once in student preview, you will then see the group as a  student .", 
+            "title": "LTI Link Settings"
+        }, 
+        {
+            "location": "/guides/Instructors/#blackboard-learn", 
+            "text": "LTI link URL  Key  Secret  Customised Parameters", 
+            "title": "Blackboard Learn"
+        }, 
+        {
+            "location": "/guides/Instructors/#adding-a-description-single-line-only", 
+            "text": "Note that there is a bug in blackboard that does not properly encode multi-line descriptions, so keep your description short and on a single line.", 
+            "title": "Adding a Description (Single Line Only)"
+        }, 
+        {
+            "location": "/guides/Instructors/#configuration", 
+            "text": "To configure the tool, access on the LTI link created earlier (ensure you are not in preview mode).", 
+            "title": "Configuration"
+        }, 
+        {
+            "location": "/guides/Instructors/#activate-peer-assessment", 
+            "text": "This feature is primarily for developers and will be removed in future releases", 
+            "title": "Activate peer assessment"
+        }, 
+        {
+            "location": "/guides/Instructors/#gradebook-syncronisation", 
+            "text": "The first time you use the tool a message will appear asking if you would like to automatically sync the gradebook. The gradebook is accessed in  Blackboard Learn via the Grade Center . This will update the user list from the Gradebook every time you access the link. Select the appropriate option.", 
+            "title": "Gradebook Syncronisation"
+        }, 
+        {
+            "location": "/guides/Instructors/#manually-upload-the-student-gradebook", 
+            "text": "If you choose 'No' for the above option, you will need to manually upload the student list.  To manually upload the student list, first download the  student list from group export . Ensure you select the  Groups and group members  and  Include header row  options. The file will be emailed to you. You will need to download it from the link in the email.   In the instructor view, uploadt the csv file using the form.", 
+            "title": "Manually Upload the Student Gradebook"
+        }, 
+        {
+            "location": "/guides/Instructors/#add-a-rubric", 
+            "text": "Export a rubric from Blackboard Learn  that you would like the students to use to assess each other.   Upload the rubric ZIP file into the peer review tool using the form:  Select the rubric from the dropdown and Attach. You can use Preview to preview the Rubric.  Rubrics will  not  attach automatically, ensure you click Attach.", 
+            "title": "Add a Rubric"
+        }, 
+        {
+            "location": "/guides/Instructors/#configure-student-view", 
+            "text": "There are several configuration options for the student view.   Show grade column  students can see the grade others have given them    Show comments  students can see the comments others have given them    Turn on self assessment  students assess their own performance first, they cannot assess others until they have assessed themselves  When changing this setting you will need to resync the user groups (see  Gradebook Syncronisation )    Include self in mean score  mean score includes the student's own score, for example if there are 5 in the group and the total score the group has given the student is 300 the final score will be 300/5 = 60 rather than 300/4 = 75    Total maximum score for assessment  used to calculate the percentage score, if you are not using a rubric you can set this here. The rubric total\n  score will override this setting if a rubric is attached", 
+            "title": "Configure Student View"
+        }, 
+        {
+            "location": "/guides/Students/", 
+            "text": "Students\n\n\nThe instructor may elect to use a rubric or not, without a rubric the student view will look like \nthe top image\n.  With the rubric a button will appear as in the \nsecond image\n.  Use the button to assess the other students.\n\n\nIf your instructor has self assessment turned on, the first person in the list will be yourself (\nbottom image\n).  You will not be able to evaluate other students until you have evaluated yourself.\n\n\nSave vs. Submit\n\n\n\n\n\n\nThe \nSave\n button will allow you to save your submission and return to it later.\n\n\n\n\n\n\nThe \nSubmit\n button will submit the assessment and will not allow you to return to it.  However, if your instructor has rolling review turned on you will be able to continue submitting multiple reviews.\n\n\n\n\n\n\nNo rubric\n\n\nNote that the wording of these screens may vary depending on the course you are in\n\n\n\n\nWith Rubric\n\n\nNote that the wording of these screens may vary depending on the course you are in\n\n\n\n\nWith Rubric and Self-Assess\n\n\nNote that the wording of these screens may vary depending on the course you are in", 
+            "title": "Students"
+        }, 
+        {
+            "location": "/guides/Students/#students", 
+            "text": "The instructor may elect to use a rubric or not, without a rubric the student view will look like  the top image .  With the rubric a button will appear as in the  second image .  Use the button to assess the other students.  If your instructor has self assessment turned on, the first person in the list will be yourself ( bottom image ).  You will not be able to evaluate other students until you have evaluated yourself.", 
+            "title": "Students"
+        }, 
+        {
+            "location": "/guides/Students/#save-vs-submit", 
+            "text": "The  Save  button will allow you to save your submission and return to it later.    The  Submit  button will submit the assessment and will not allow you to return to it.  However, if your instructor has rolling review turned on you will be able to continue submitting multiple reviews.", 
+            "title": "Save vs. Submit"
+        }, 
+        {
+            "location": "/guides/Students/#no-rubric", 
+            "text": "Note that the wording of these screens may vary depending on the course you are in", 
+            "title": "No rubric"
+        }, 
+        {
+            "location": "/guides/Students/#with-rubric", 
+            "text": "Note that the wording of these screens may vary depending on the course you are in", 
+            "title": "With Rubric"
+        }, 
+        {
+            "location": "/guides/Students/#with-rubric-and-self-assess", 
+            "text": "Note that the wording of these screens may vary depending on the course you are in", 
+            "title": "With Rubric and Self-Assess"
+        }, 
+        {
+            "location": "/guides/Templates/", 
+            "text": "Example templates\n\n\nThese templates are provided as usable examples. Further examples can be \ndownloaded as a ZIP file\n.  \n\n\nFor details on how to setup to setup templates in ExpressionEngine check the \nTemplate Language Overview\n.\n\n\nBlackboard Learn Templates\n\n\nLanding Page Example\n\n\nLanding Page\n\n\nLanding page for students and instructors, renders default views as described in the \nInstructors\n and \nStudent\n guides\n\n\nMarking Guide\n\n\nMarking Guide\n\n\nMarking guide for students, this is can be optionally linked from the index page.\n\n\nRubric\n\n\nRubric\n\n\nTemplate for rendering Blackboard Learn rubrics.", 
+            "title": "Home"
+        }, 
+        {
+            "location": "/guides/Templates/#example-templates", 
+            "text": "These templates are provided as usable examples. Further examples can be  downloaded as a ZIP file .    For details on how to setup to setup templates in ExpressionEngine check the  Template Language Overview .", 
+            "title": "Example templates"
+        }, 
+        {
+            "location": "/guides/Templates/#blackboard-learn-templates", 
+            "text": "", 
+            "title": "Blackboard Learn Templates"
+        }, 
+        {
+            "location": "/guides/Templates/#landing-page-example", 
+            "text": "Landing Page  Landing page for students and instructors, renders default views as described in the  Instructors  and  Student  guides", 
+            "title": "Landing Page Example"
+        }, 
+        {
+            "location": "/guides/Templates/#marking-guide", 
+            "text": "Marking Guide  Marking guide for students, this is can be optionally linked from the index page.", 
+            "title": "Marking Guide"
+        }, 
+        {
+            "location": "/guides/Templates/#rubric", 
+            "text": "Rubric  Template for rendering Blackboard Learn rubrics.", 
+            "title": "Rubric"
+        }, 
+        {
+            "location": "/guides/Templates/landing_page/", 
+            "text": "Landing Page Example Template\n\n\n!DOCTYPE html\n\n\nhtml\n\n\nhead\n\n    \ntitle\n{resource_title}\n/title\n\n    \nscript src=\nhttps://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js\n/script\n\n\n/head\n\n\nbody\n\n  {exp:learning_tools_integration\n    prev_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_previous.gif'\n    next_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_next.gif'\n    first_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_rewind.gif'\n    last_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_ffwd.gif'\n    plugins='lti_peer_assessment'}\n     {css_link_tags}\n    \n!-- imported from LMS --\n\n    \nstyle\n\n    .liItem {\n    padding: 25px;\n    }\n    textarea {\n    width: 22em;\n    height: 5em;\n    }\n    table {\n    min-width: 90% !important;\n    }\n    th {\n    height: 20px !important;\n    /*background-color: gray;*/\n    color: white;\n    padding: 8px;\n    }\n    td {\n    height: 20px;\n    padding: 8px;\n    }\n    tr:nth-child(odd) {\n    background-color: rgb(196, 225, 234);\n    }\n    /* verification form styles*/\n    .p_ver {\n    padding: 1.1em;\n    }\n    .p_ver \n input {\n    margin-left: 2em;\n    }\n    .not_matched {\n    background-color: rgb(200, 155, 180);\n    }\n    \n/style\n\n    {if error_messages != \n}\n        {error_messages}\n    {/if}\n    {if logged_in}\n    \ndiv class='locationPane'\n\n        \ndiv class='contentPane'\n\n            \ndiv class='pageTitle clearfix'\n\n                \nh1\n{resource_title}\n/h1\n\n                \np\n{resource_link_description}\n/p\n\n                \np\nspan class='warningMsg'\n{general_message}\n/span\n/p\n\n                \np\na href='{launch_presentation_return_url}'\nReturn to course:\n                {course_name}\n/a\n/p\n\n            \n/div\n\n            \ndiv class='contentBox clearfix'\n\n                \nul\n\n                    \nli class='clearfix liItem'\n{if is_instructor == 1}\n                                       \nh1\nGeneral Settings\n/h1\n\n               \np\nGroup import \namp; Plugin settings\n/p\n\n               \nhr /\n\n                \nbr /\n\n                {general_settings_form}\n              \nhr/\n\n              \nbr/\n\n\n                        \nh1\nStudents registered for Peer Evaluation\n/h1\n\n                        \ndiv class='datalist' style='display: inline-block'\n\n                            {student_table}\n                        \n/div\n\n                        \nh3\nGive Students Access to Peer Evaluation\n/h3\n\n                        \np\n{upload_student_list}\n/p\n\n                        \nh3\nBlackboard Rubrics\n/h3\n\n                        \np\nUpload rubrics here for this course, attached\n                        rubrics will be used by students to grade their\n                        peers.\n/p\n\n                        \np\nem\nTo create and export a rubric from Blackboard,\n                        go to \nstrong\nOrganisation Tools \nrarr;\n                        Rubrics\n/strong\n.\n/em\n/p\nbr\n\n                        \nh4\nUpload a rubric\n/h4\n\n                        \np\n{upload_blackboard_rubric}\n/p\n\n                    \n/li\n\n                    \nli class='clearfix liItem'\n\n                        \nh2\nFurther Tools\n/h2\n\n                        \nh3\nSettings\n/h3\n{exp:lti_peer_assessment:settings}\n                        \nhr\n\n                        \nbr\n\n                        \nh3\nDownload Evaluations\n/h3\n\n                        \nh4\nem\nDownload Evaluations as Excel Spreadsheet\n/em\n/h4\n{exp:lti_peer_assessment:download_excel}\n                    \n/li\n\n                    \nli style=\nlist-style: none\n{if:else}\n                        \nh1\n{exp:lti_peer_assessment:group_name}\n/h1\n\n                        \nh2\nYour Evaluations of Other Group Members\n/h2\n\n                        \nh3\nEvaluation Form\n/h3\n\n                        \np style='font-size: 1.5em'\na href='https://bold-space.newcastle.edu.au/lti/index.php/cmns3530/marking_impact'\nAccess this link for the Marking Impact document\n/a\n/p\nbr\n\n                        {exp:lti_peer_assessment:form type='single'}\n                        {/if}\n                    \n/li\n\n                    \nli class='liItem clearfix'\n\n                        \np\na href='{launch_presentation_return_url}'\nReturn to\n                        course: {course_name}\n/a\n/p\n{/if}\n                    \n/li\n\n                \n/ul\n\n            \n/div\n\n        \n/div\n\n    \n/div\n\n    {/exp:learning_tools_integration}\n\n/body", 
+            "title": "Landing page"
+        }, 
+        {
+            "location": "/guides/Templates/landing_page/#landing-page-example-template", 
+            "text": "!DOCTYPE html  html  head \n     title {resource_title} /title \n     script src= https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js /script  /head  body \n  {exp:learning_tools_integration\n    prev_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_previous.gif'\n    next_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_next.gif'\n    first_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_rewind.gif'\n    last_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_ffwd.gif'\n    plugins='lti_peer_assessment'}\n     {css_link_tags}\n     !-- imported from LMS -- \n     style \n    .liItem {\n    padding: 25px;\n    }\n    textarea {\n    width: 22em;\n    height: 5em;\n    }\n    table {\n    min-width: 90% !important;\n    }\n    th {\n    height: 20px !important;\n    /*background-color: gray;*/\n    color: white;\n    padding: 8px;\n    }\n    td {\n    height: 20px;\n    padding: 8px;\n    }\n    tr:nth-child(odd) {\n    background-color: rgb(196, 225, 234);\n    }\n    /* verification form styles*/\n    .p_ver {\n    padding: 1.1em;\n    }\n    .p_ver   input {\n    margin-left: 2em;\n    }\n    .not_matched {\n    background-color: rgb(200, 155, 180);\n    }\n     /style \n    {if error_messages !=  }\n        {error_messages}\n    {/if}\n    {if logged_in}\n     div class='locationPane' \n         div class='contentPane' \n             div class='pageTitle clearfix' \n                 h1 {resource_title} /h1 \n                 p {resource_link_description} /p \n                 p span class='warningMsg' {general_message} /span /p \n                 p a href='{launch_presentation_return_url}' Return to course:\n                {course_name} /a /p \n             /div \n             div class='contentBox clearfix' \n                 ul \n                     li class='clearfix liItem' {if is_instructor == 1}\n                                        h1 General Settings /h1 \n                p Group import  amp; Plugin settings /p \n                hr / \n                 br / \n                {general_settings_form}\n               hr/ \n               br/ \n\n                         h1 Students registered for Peer Evaluation /h1 \n                         div class='datalist' style='display: inline-block' \n                            {student_table}\n                         /div \n                         h3 Give Students Access to Peer Evaluation /h3 \n                         p {upload_student_list} /p \n                         h3 Blackboard Rubrics /h3 \n                         p Upload rubrics here for this course, attached\n                        rubrics will be used by students to grade their\n                        peers. /p \n                         p em To create and export a rubric from Blackboard,\n                        go to  strong Organisation Tools  rarr;\n                        Rubrics /strong . /em /p br \n                         h4 Upload a rubric /h4 \n                         p {upload_blackboard_rubric} /p \n                     /li \n                     li class='clearfix liItem' \n                         h2 Further Tools /h2 \n                         h3 Settings /h3 {exp:lti_peer_assessment:settings}\n                         hr \n                         br \n                         h3 Download Evaluations /h3 \n                         h4 em Download Evaluations as Excel Spreadsheet /em /h4 {exp:lti_peer_assessment:download_excel}\n                     /li \n                     li style= list-style: none {if:else}\n                         h1 {exp:lti_peer_assessment:group_name} /h1 \n                         h2 Your Evaluations of Other Group Members /h2 \n                         h3 Evaluation Form /h3 \n                         p style='font-size: 1.5em' a href='https://bold-space.newcastle.edu.au/lti/index.php/cmns3530/marking_impact' Access this link for the Marking Impact document /a /p br \n                        {exp:lti_peer_assessment:form type='single'}\n                        {/if}\n                     /li \n                     li class='liItem clearfix' \n                         p a href='{launch_presentation_return_url}' Return to\n                        course: {course_name} /a /p {/if}\n                     /li \n                 /ul \n             /div \n         /div \n     /div \n    {/exp:learning_tools_integration} /body", 
+            "title": "Landing Page Example Template"
+        }, 
+        {
+            "location": "/guides/Templates/marking-guide/", 
+            "text": "Marking Guide Example Template\n\n\nhead\n\n\n!-- imported from LMS --\n\n    {css_link_tags}\n\nstyle\n\n.contentPane {\n    margin: 0 14px 0 14px;\n}\n.liItem {\n    padding: 25px;\n}\ntextarea {\n    width: 22em;\n    height: 5em;\n}\ntable {\n    min-width: 90% !important;\n}\n.datalist th {\n  height: 20px !important;\n  /*background-color: gray;*/\n  color: white;\n  padding: 8px;\n}\n.datalist td {\n  height: 20px;\n  padding: 8px;\n}\n.datalist tr:nth-child(odd) {\n  background-color: rgb(196, 225, 234);\n}\n/* verification form styles*/\n.p_ver {\n    padding: 1.1em;\n}\n.p_ver \n input {\n  margin-left: 2em;\n}\n.not_matched {\n    background-color: rgb(200, 155, 180);\n}\np {\n    margin-top: 0.5em;\n    margin-bottom: 0.5em;\n    font-size: 14pt;\n}\n\n/style\n\n    \ntitle\nMarking Impact\n/title\n\n\n/head\n\n\nbody class='lesson-plan-page'\n\n\n{if logged_in}\n\ndiv class='contentPane'\n\n\ndiv class='contentBox' style='padding: 1em'\n\n        \nh2\nMarking impact:\n/h2\n\n\np\nThe grading will be from 1 - 5 with 5 being the highest. Marks will be averaged out to an overall peer assessment grade out of 5. Part marks will\nbe rounded up or down .1 - .4 rounded down and .5 - .9 rounded up.\n/p\np\n\nTherefore is you scored 34/40 your overall score would be 4.25 which would mean you would be awarded a score of 4. This means that you\nwould receive 3 additional marks on top of your group score for your communication audit. EG. Group score 21/25 \u2013 you would have a final\nmark of 24/30.\n/p\n\n\np\n\nIf you were scored 14/40 your overall score would be 1.75 which would mean you would be awarded a score of 2. This means that you would\nhave 3 marks deducted from your group score for your communication audit. EG. Group score 21/25 \u2013 you would have a final mark of 18/30.\n/p\n\n\np style='margin-left:3em'\n\n5 = Outstanding contribution, can't be faulted (awarded 5 marks on top of group mark)\nbr\n\n4 = Very good overall (awarded 3 marks on top of group mark)\nbr\n\n3 = Generally good (awarded the group project mark as assessed by the tutor)\nbr\n\n2 = Barely adequate overall (awarded the group mark minus 3 marks)\nbr\n\n1 = Generally inadequate overall (awarded the group mark minus 5 marks)\nbr\n\n\n/p\n\n\np\n\nThis means that if the group mark is allocated by the tutor as 22/25, a group member judged by group peers as making an outstanding\ncontribution will receive 27/30 as the final assessment mark (group mark plus 5 marks). A group member judged by group peers to have made\na generally inadequate overall contribution would receive 17/30 for the same group assignment (group mark minus 5 marks).\n/p\n\n\n\na href='javascript: {window.history.back()}'\nlarr; Back\n/a\n\n{if:else}\n\n\np\nYou are not logged in.\n/p\n\n{/if}\n\n\n/div\n\n\n/div", 
+            "title": "Marking guide"
+        }, 
+        {
+            "location": "/guides/Templates/marking-guide/#marking-guide-example-template", 
+            "text": "head  !-- imported from LMS -- \n    {css_link_tags} style \n.contentPane {\n    margin: 0 14px 0 14px;\n}\n.liItem {\n    padding: 25px;\n}\ntextarea {\n    width: 22em;\n    height: 5em;\n}\ntable {\n    min-width: 90% !important;\n}\n.datalist th {\n  height: 20px !important;\n  /*background-color: gray;*/\n  color: white;\n  padding: 8px;\n}\n.datalist td {\n  height: 20px;\n  padding: 8px;\n}\n.datalist tr:nth-child(odd) {\n  background-color: rgb(196, 225, 234);\n}\n/* verification form styles*/\n.p_ver {\n    padding: 1.1em;\n}\n.p_ver   input {\n  margin-left: 2em;\n}\n.not_matched {\n    background-color: rgb(200, 155, 180);\n}\np {\n    margin-top: 0.5em;\n    margin-bottom: 0.5em;\n    font-size: 14pt;\n} /style \n     title Marking Impact /title  /head  body class='lesson-plan-page' \n\n{if logged_in} div class='contentPane'  div class='contentBox' style='padding: 1em' \n         h2 Marking impact: /h2  p The grading will be from 1 - 5 with 5 being the highest. Marks will be averaged out to an overall peer assessment grade out of 5. Part marks will\nbe rounded up or down .1 - .4 rounded down and .5 - .9 rounded up. /p p \nTherefore is you scored 34/40 your overall score would be 4.25 which would mean you would be awarded a score of 4. This means that you\nwould receive 3 additional marks on top of your group score for your communication audit. EG. Group score 21/25 \u2013 you would have a final\nmark of 24/30. /p  p \nIf you were scored 14/40 your overall score would be 1.75 which would mean you would be awarded a score of 2. This means that you would\nhave 3 marks deducted from your group score for your communication audit. EG. Group score 21/25 \u2013 you would have a final mark of 18/30. /p  p style='margin-left:3em' \n5 = Outstanding contribution, can't be faulted (awarded 5 marks on top of group mark) br \n4 = Very good overall (awarded 3 marks on top of group mark) br \n3 = Generally good (awarded the group project mark as assessed by the tutor) br \n2 = Barely adequate overall (awarded the group mark minus 3 marks) br \n1 = Generally inadequate overall (awarded the group mark minus 5 marks) br  /p  p \nThis means that if the group mark is allocated by the tutor as 22/25, a group member judged by group peers as making an outstanding\ncontribution will receive 27/30 as the final assessment mark (group mark plus 5 marks). A group member judged by group peers to have made\na generally inadequate overall contribution would receive 17/30 for the same group assignment (group mark minus 5 marks). /p  a href='javascript: {window.history.back()}' larr; Back /a \n{if:else} p You are not logged in. /p \n{/if} /div  /div", 
+            "title": "Marking Guide Example Template"
+        }, 
+        {
+            "location": "/guides/Templates/rubric/", 
+            "text": "Rubric Example Template\n\n\nhead\n\n\n!-- imported from LMS --\n\n    {css_link_tags}\n\nstyle\n\n.contentPane {\n    margin: 0 14px 0 14px;\n}\n.liItem {\n    padding: 25px;\n}\ntextarea {\n    width: 22em;\n    height: 5em;\n}\ntable {\n    min-width: 90% !important;\n}\n.datalist th {\n  height: 20px !important;\n  /*background-color: gray;*/\n  color: white;\n  padding: 8px;\n}\n.datalist td {\n  height: 20px;\n  padding: 8px;\n}\n.datalist tr:nth-child(odd) {\n  background-color: rgb(196, 225, 234);\n}\n/* verification form styles*/\n.p_ver {\n    padding: 1.1em;\n}\n.p_ver \n input {\n  margin-left: 2em;\n}\n.not_matched {\n    background-color: rgb(200, 155, 180);\n}\np {\n    margin-top: 0.5em;\n    margin-bottom: 0.5em;\n    font-size: 14pt;\n}\n\n/style\n\n    \ntitle\nMarking Impact\n/title\n\n\n/head\n\n\nbody class='lesson-plan-page'\n\n\n{if logged_in}\n\n\n\ndiv class='contentPane'\n\n\ndiv class='contentBox' style='padding: 1em'\n\n        \nh2\nMarking impact:\n/h2\n\n\np\nThe grading will be from 1 - 5 with 5 being the highest. Marks will be averaged out to an overall peer assessment grade out of 5. Part marks will\nbe rounded up or down .1 - .4 rounded down and .5 - .9 rounded up.\n/p\np\n\nTherefore is you scored 34/40 your overall score would be 4.25 which would mean you would be awarded a score of 4. This means that you\nwould receive 3 additional marks on top of your group score for your communication audit. EG. Group score 21/25 \u2013 you would have a final\nmark of 24/30.\n/p\n\n\np\n\nIf you were scored 14/40 your overall score would be 1.75 which would mean you would be awarded a score of 2. This means that you would\nhave 3 marks deducted from your group score for your communication audit. EG. Group score 21/25 \u2013 you would have a final mark of 18/30.\n/p\n\n\np style='margin-left:3em'\n\n5 = Outstanding contribution, can't be faulted (awarded 5 marks on top of group mark)\nbr\n\n4 = Very good overall (awarded 3 marks on top of group mark)\nbr\n\n3 = Generally good (awarded the group project mark as assessed by the tutor)\nbr\n\n2 = Barely adequate overall (awarded the group mark minus 3 marks)\nbr\n\n1 = Generally inadequate overall (awarded the group mark minus 5 marks)\nbr\n\n\n/p\n\n\np\n\nThis means that if the group mark is allocated by the tutor as 22/25, a group member judged by group peers as making an outstanding\ncontribution will receive 27/30 as the final assessment mark (group mark plus 5 marks). A group member judged by group peers to have made\na generally inadequate overall contribution would receive 17/30 for the same group assignment (group mark minus 5 marks).\n/p\n\n\n\na href='javascript: {window.history.back()}'\nlarr; Back\n/a\n\n{if:else}\n\n\np\nYou are not logged in.\n/p\n\n{/if}\n\n\n/div\n\n\n/div", 
+            "title": "Rubric"
+        }, 
+        {
+            "location": "/guides/Templates/rubric/#rubric-example-template", 
+            "text": "head  !-- imported from LMS -- \n    {css_link_tags} style \n.contentPane {\n    margin: 0 14px 0 14px;\n}\n.liItem {\n    padding: 25px;\n}\ntextarea {\n    width: 22em;\n    height: 5em;\n}\ntable {\n    min-width: 90% !important;\n}\n.datalist th {\n  height: 20px !important;\n  /*background-color: gray;*/\n  color: white;\n  padding: 8px;\n}\n.datalist td {\n  height: 20px;\n  padding: 8px;\n}\n.datalist tr:nth-child(odd) {\n  background-color: rgb(196, 225, 234);\n}\n/* verification form styles*/\n.p_ver {\n    padding: 1.1em;\n}\n.p_ver   input {\n  margin-left: 2em;\n}\n.not_matched {\n    background-color: rgb(200, 155, 180);\n}\np {\n    margin-top: 0.5em;\n    margin-bottom: 0.5em;\n    font-size: 14pt;\n} /style \n     title Marking Impact /title  /head  body class='lesson-plan-page' \n\n{if logged_in} div class='contentPane'  div class='contentBox' style='padding: 1em' \n         h2 Marking impact: /h2  p The grading will be from 1 - 5 with 5 being the highest. Marks will be averaged out to an overall peer assessment grade out of 5. Part marks will\nbe rounded up or down .1 - .4 rounded down and .5 - .9 rounded up. /p p \nTherefore is you scored 34/40 your overall score would be 4.25 which would mean you would be awarded a score of 4. This means that you\nwould receive 3 additional marks on top of your group score for your communication audit. EG. Group score 21/25 \u2013 you would have a final\nmark of 24/30. /p  p \nIf you were scored 14/40 your overall score would be 1.75 which would mean you would be awarded a score of 2. This means that you would\nhave 3 marks deducted from your group score for your communication audit. EG. Group score 21/25 \u2013 you would have a final mark of 18/30. /p  p style='margin-left:3em' \n5 = Outstanding contribution, can't be faulted (awarded 5 marks on top of group mark) br \n4 = Very good overall (awarded 3 marks on top of group mark) br \n3 = Generally good (awarded the group project mark as assessed by the tutor) br \n2 = Barely adequate overall (awarded the group mark minus 3 marks) br \n1 = Generally inadequate overall (awarded the group mark minus 5 marks) br  /p  p \nThis means that if the group mark is allocated by the tutor as 22/25, a group member judged by group peers as making an outstanding\ncontribution will receive 27/30 as the final assessment mark (group mark plus 5 marks). A group member judged by group peers to have made\na generally inadequate overall contribution would receive 17/30 for the same group assignment (group mark minus 5 marks). /p  a href='javascript: {window.history.back()}' larr; Back /a \n{if:else} p You are not logged in. /p \n{/if} /div  /div", 
+            "title": "Rubric Example Template"
+        }
+    ]
+}

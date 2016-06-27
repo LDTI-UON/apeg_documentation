@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+
+	<title>Rubric - Peer Review Platform</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">Peer Review Platform</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../About/">About</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../Installation/">Installation</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Instructors/">Instructors</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../Students/">Students</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Templates</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../">Home</a>
+</li>
+
+        
+            
+<li >
+    <a href="../landing_page/">Landing page</a>
+</li>
+
+        
+            
+<li >
+    <a href="../marking-guide/">Marking guide</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Rubric</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../marking-guide/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li class="disabled">
+                        <a rel="prev" >
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#rubric-example-template">Rubric Example Template</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="rubric-example-template">Rubric Example Template</h1>
+<pre><code class="html">&lt;head&gt;
+&lt;!-- imported from LMS --&gt;
+    {css_link_tags}
+&lt;style&gt;
+.contentPane {
+    margin: 0 14px 0 14px;
+}
+.liItem {
+    padding: 25px;
+}
+textarea {
+    width: 22em;
+    height: 5em;
+}
+table {
+    min-width: 90% !important;
+}
+.datalist th {
+  height: 20px !important;
+  /*background-color: gray;*/
+  color: white;
+  padding: 8px;
+}
+.datalist td {
+  height: 20px;
+  padding: 8px;
+}
+.datalist tr:nth-child(odd) {
+  background-color: rgb(196, 225, 234);
+}
+/* verification form styles*/
+.p_ver {
+    padding: 1.1em;
+}
+.p_ver &gt; input {
+  margin-left: 2em;
+}
+.not_matched {
+    background-color: rgb(200, 155, 180);
+}
+p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 14pt;
+}
+&lt;/style&gt;
+    &lt;title&gt;Marking Impact&lt;/title&gt;
+&lt;/head&gt;
+&lt;body class='lesson-plan-page'&gt;
+
+{if logged_in}
+
+
+&lt;div class='contentPane'&gt;
+&lt;div class='contentBox' style='padding: 1em'&gt;
+        &lt;h2&gt;Marking impact:&lt;/h2&gt;
+&lt;p&gt;The grading will be from 1 - 5 with 5 being the highest. Marks will be averaged out to an overall peer assessment grade out of 5. Part marks will
+be rounded up or down .1 - .4 rounded down and .5 - .9 rounded up.&lt;/p&gt;&lt;p&gt;
+Therefore is you scored 34/40 your overall score would be 4.25 which would mean you would be awarded a score of 4. This means that you
+would receive 3 additional marks on top of your group score for your communication audit. EG. Group score 21/25 – you would have a final
+mark of 24/30.&lt;/p&gt;
+&lt;p&gt;
+If you were scored 14/40 your overall score would be 1.75 which would mean you would be awarded a score of 2. This means that you would
+have 3 marks deducted from your group score for your communication audit. EG. Group score 21/25 – you would have a final mark of 18/30.&lt;/p&gt;
+&lt;p style='margin-left:3em'&gt;
+5 = Outstanding contribution, can't be faulted (awarded 5 marks on top of group mark)&lt;br&gt;
+4 = Very good overall (awarded 3 marks on top of group mark)&lt;br&gt;
+3 = Generally good (awarded the group project mark as assessed by the tutor)&lt;br&gt;
+2 = Barely adequate overall (awarded the group mark minus 3 marks)&lt;br&gt;
+1 = Generally inadequate overall (awarded the group mark minus 5 marks)&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+This means that if the group mark is allocated by the tutor as 22/25, a group member judged by group peers as making an outstanding
+contribution will receive 27/30 as the final assessment mark (group mark plus 5 marks). A group member judged by group peers to have made
+a generally inadequate overall contribution would receive 17/30 for the same group assignment (group mark minus 5 marks).&lt;/p&gt;
+
+&lt;a href='javascript: {window.history.back()}'&gt;&amp;larr; Back&lt;/a&gt;
+{if:else}
+
+&lt;p&gt;You are not logged in.&lt;/p&gt;
+{/if}
+
+&lt;/div&gt;
+&lt;/div&gt;
+</code></pre></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
