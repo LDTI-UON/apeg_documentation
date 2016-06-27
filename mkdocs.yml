@@ -1,1 +1,4 @@
 site_name: Peer Review Platform
+theme: flatly
+copyright: "<sub>Paul Sijpkes<sup>&copy; 2016</sup></sub><br><sub><em>A living document</em> [rev. 0.2]</sub>
+"
