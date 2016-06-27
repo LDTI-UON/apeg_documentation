@@ -4,7 +4,7 @@
 
 The peer review platform is a web application that allows students completing group work to evaluate each other's contribution to the group using a [rubric](https://en.wikipedia.org/wiki/Rubric_(academic)) or by giving a numeric 'grade'. The application is optimised for use with the Blackboard Learn VLE.
 
-The application can be adapted to to any VLE that implements the IMS Global&reg; Learning Tools Interoperability&reg; (LTI) standard.  
+The application can be adapted to to any VLE that implements the IMS Global<sup>&reg;</sup> Learning Tools Interoperability<sup>&reg;</sup> (LTI) standard.  
 
 ## [Students](guides/Students)
 Assessing your group's members using the peer review platform
