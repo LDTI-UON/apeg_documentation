@@ -13,7 +13,7 @@
 
 1. Download and install a webserver (Apache is recommended), PHP 5, mySQL, git and [ExpressionEngine Core CMS](https://store.ellislab.com/#ee-core)
 
-    _There are countless resources on the web to install the above online.  The suggested items are all open source or free_
+    _There are countless resources on the web to install the above.  The suggested items are all open source or free_
 
 2. Clone and Install the ExpressionEngine Modules
   The most up to date version of the application is available on Bitbucket and comes in two parts,
@@ -22,9 +22,10 @@
         git clone https://sijpkes@bitbucket.org/sijpkes/ee3-lti-module.git
 
 3. change the name of the folder to learning_tools_integration
+
 4. copy the entire folder to:
 
-        /system/users/addons
+        /system/user/addons
 
 5. Clone the Peer Assessment Plugin
 
