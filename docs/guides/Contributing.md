@@ -8,5 +8,5 @@ This is the core module for ExpressionEngine that allows a secure LTI connection
 ### [EE LTI Extension Hooks](https://bitbucket.org/sijpkes/ee3-lti-extension-hooks)
 These are extension hooks providing functionality for the Blackboard Learn environment, including rubric import and gradebook import.  
 
-### [EE Peer Assssment Plugin](https://bitbucket.org/sijpkes/lti-peer-assessment)
+### [EE Peer Assessment Plugin](https://bitbucket.org/sijpkes/lti-peer-assessment)
 This is the peer assessment plugin, this plugin depends on the above modules.  

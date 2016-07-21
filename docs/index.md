@@ -19,4 +19,5 @@ Setting up the ExpressionEngine templates for the peer review platform.
 Server installation instructions of ExpressionEngine CMS and the Peer Review Add-on.
 
 ## [Contributing](guides/Contributing)
-The PRP is open-source, developers can contribute new features here.
+The PRP is open-source, developers are welcome to contribute new features or add new hooks for your
+LMS or VLE.  

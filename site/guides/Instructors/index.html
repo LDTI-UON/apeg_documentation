@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        
+        <meta name="author" content="Paul Sijpkes">
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
@@ -22,6 +22,16 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-80175715-1', 'bold.newcastle.edu.au/padocs');
+            ga('send', 'pageview');
+        </script>
         
     </head>
 
@@ -65,6 +75,12 @@
                 <li class="dropdown active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
                     <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="../Contributing/">Contributing</a>
+</li>
+
                     
                         
 <li >
@@ -141,6 +157,15 @@
                     </a>
                 </li>
                 
+                <li>
+                    <a href="https://bitbucket.org/sijpkes/lti-peer-assessment">
+                        
+                            <i class="fa fa-bitbucket"></i>
+                        
+                        Bitbucket
+                    </a>
+                </li>
+                
             </ul>
         </div>
     </div>
@@ -164,6 +189,8 @@
         
             <li><a href="#configure-student-view">Configure Student View</a></li>
         
+            <li><a href="#previewing-as-a-student">Previewing as a Student</a></li>
+        
     
     </ul>
 </div></div>
@@ -174,7 +201,7 @@
 <p>Once the templates have been setup you will be supplied with the details for the LTI link as it appears in <a href="https://uonline.newcastle.edu.au/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_301_1">Blackboard Learn</a></p>
 <h2 id="lti-link-settings">LTI Link Settings</h2>
 <p>Once the link has been placed in your course, you can manage settings as an Instructor by clicking the link.  To preview the tool, it is first necessary to <a href="http://en-us.help.blackboard.com/Learn/Instructor/Courses/Student_Preview#Keep_the_preview_user_and_data">keep your preview user</a> and subsequently
-<a href="https://www.blackboard.com/quicktutorials/bb9_groups_create_groups_add_students.htm">add your preview user to a group</a>.  Once in student preview, you will then see the group as a <a href="../Students">student</a>.</p>
+<a href="#previewing-as-a-student">add your preview user to a group</a>.  Once in student preview, you will then see the group as a <a href="../Students">student</a>.</p>
 <h3 id="blackboard-learn">Blackboard Learn</h3>
 <ul>
 <li>LTI link URL</li>
@@ -234,13 +261,41 @@
 </ul>
 </li>
 </ul>
-<p><img alt="Peer Assessment Settings" src="../images/bb_pa_settings.png" /></p></div>
+<p><img alt="Peer Review Settings" src="../images/bb_pa_settings.png" /></p>
+<h2 id="previewing-as-a-student">Previewing as a Student</h2>
+<p>You can see the student view by adding your Blackboard preview user to a group and then syncronising the PRP with Blackboard.</p>
+<p><a href="https://www.blackboard.com/quicktutorials/bb9_groups_create_groups_add_students.htm">View a general guide at blackboard.com on how to add users to groups</a>.</p>
+<ol>
+<li>Ensure you Save your preview user by accessing the <img alt="Preview Icon" src="../images/bb_preview.png" />  and then clicking the <img alt="Settings" src="../images/bb_prev_settings.png" /> button.</li>
+<li>Exit preview mode.</li>
+<li>Access Users and Groups -&gt; Groups.</li>
+<li>
+<p>Select Edit Group in the drop down:
+      <img alt="Edit Group" src="../images/bb_edit_group_dd.png" /></p>
+</li>
+<li>
+<p>Click <strong>Add Users</strong> and search for <strong>Username -&gt; Contains -&gt; [your username]</strong>.</p>
+<ul>
+<li>
+<p>Your username will be:
+          <strong>[your username] underscore preview user</strong>,</p>
+<p>so the username <code>jb123</code> would have a preview user <code>jb123_previewuser</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Add this user and ensure you now syncronise the groups with Blackboard using either <a href="#gradebook-syncronisation">Gradebook Syncronisation</a> or <a href="#manually-upload-the-student-gradebook">Manually Upload the Student Gradebook</a></p>
+</li>
+<li>
+<p>You can now use preview mode to access the LTI link created earlier and view the peer review group you added your previewuser to in step 4 to 6 earlier.</p>
+</li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             
-                <center><sub>Paul Sijpkes<sup>&copy; 2016</sup>, The University of Newcastle, Australia</sub><br><sub><em>A living document</em> [rev. 0.4]</sub> </center>
+                <center><a href='mailto:paul.sijpkes@newcastle.edu.au;paul.sijpkes@gmail.com'>Paul Sijpkes <sup>&copy;2016</sup></a><br> <a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 0.6]</sub> </center>
             
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>

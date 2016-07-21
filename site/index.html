@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        
+        <meta name="author" content="Paul Sijpkes">
         
         <link rel="shortcut icon" href="./img/favicon.ico">
 
@@ -22,6 +22,16 @@
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
+        
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-80175715-1', 'bold.newcastle.edu.au/padocs');
+            ga('send', 'pageview');
+        </script>
         
     </head>
 
@@ -65,6 +75,12 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Guides <b class="caret"></b></a>
                     <ul class="dropdown-menu">
+                    
+                        
+<li >
+    <a href="guides/Contributing/">Contributing</a>
+</li>
+
                     
                         
 <li >
@@ -141,6 +157,15 @@
                     </a>
                 </li>
                 
+                <li>
+                    <a href="https://bitbucket.org/sijpkes/lti-peer-assessment">
+                        
+                            <i class="fa fa-bitbucket"></i>
+                        
+                        Bitbucket
+                    </a>
+                </li>
+                
             </ul>
         </div>
     </div>
@@ -162,6 +187,8 @@
         
             <li><a href="#installation">Installation</a></li>
         
+            <li><a href="#contributing">Contributing</a></li>
+        
     
     </ul>
 </div></div>
@@ -169,7 +196,7 @@
 
 <h1 id="peer-review-platform">Peer Review Platform</h1>
 <h2 id="what-is-it">What is it?</h2>
-<p>The peer review platform is a web application that allows students completing group work to evaluate each other's contribution to the group using a <a href="https://en.wikipedia.org/wiki/Rubric_(academic)">rubric</a> or by giving a numeric 'grade'. The application is optimised for use with the Blackboard Learn VLE.</p>
+<p>The peer review platform (PRP) is a web application that allows students completing group work to evaluate each other's contribution to the group using a <a href="https://en.wikipedia.org/wiki/Rubric_(academic)">rubric</a> or by giving a numeric 'grade'. The application is optimised for use with the <a href="http://anz.blackboard.com/sites/international/globalmaster/">Blackboard Learn VLE</a>.</p>
 <p>The application can be adapted to to any VLE that implements the IMS Global<sup>&reg;</sup> Learning Tools Interoperability<sup>&reg;</sup> (LTI) standard.  </p>
 <h2 id="students"><a href="./guides/Students">Students</a></h2>
 <p>Assessing your group's members using the peer review platform</p>
@@ -178,13 +205,16 @@
 <h2 id="templates"><a href="./guides/Templates">Templates</a></h2>
 <p>Setting up the ExpressionEngine templates for the peer review platform.</p>
 <h2 id="installation"><a href="./guides/Installation">Installation</a></h2>
-<p>Server installation instructions of ExpressionEngine CMS and the Peer Review Add-on.</p></div>
+<p>Server installation instructions of ExpressionEngine CMS and the Peer Review Add-on.</p>
+<h2 id="contributing"><a href="./guides/Contributing">Contributing</a></h2>
+<p>The PRP is open-source, developers are welcome to contribute new features or add new hooks for your
+LMS or VLE.  </p></div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             
-                <center><sub>Paul Sijpkes<sup>&copy; 2016</sup>, The University of Newcastle, Australia</sub><br><sub><em>A living document</em> [rev. 0.4]</sub> </center>
+                <center><a href='mailto:paul.sijpkes@newcastle.edu.au;paul.sijpkes@gmail.com'>Paul Sijpkes <sup>&copy;2016</sup></a><br> <a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 0.6]</sub> </center>
             
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>

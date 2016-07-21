@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2016-06-27</lastmod>
+     <lastmod>2016-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>None/About/</loc>
-     <lastmod>2016-06-27</lastmod>
+     <lastmod>2016-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,20 +20,26 @@
     
         
     <url>
+     <loc>None/guides/Contributing/</loc>
+     <lastmod>2016-07-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>None/guides/Installation/</loc>
-     <lastmod>2016-06-27</lastmod>
+     <lastmod>2016-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/guides/Instructors/</loc>
-     <lastmod>2016-06-27</lastmod>
+     <lastmod>2016-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/guides/Students/</loc>
-     <lastmod>2016-06-27</lastmod>
+     <lastmod>2016-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
