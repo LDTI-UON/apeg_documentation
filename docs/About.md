@@ -1,6 +1,6 @@
 ## About
 
-The peer review platform is a living application developed by Paul Sijpkes.  Paul is a member of the [BOLD Team](https://bold.newcastle.edu.au) at the University of Newcastle, Australia.
+GEM is a living application developed by Paul Sijpkes.  Paul is a member of the [BOLD Team](https://bold.newcastle.edu.au) at the University of Newcastle, Australia.
 
 ### Acknowledgements
 
