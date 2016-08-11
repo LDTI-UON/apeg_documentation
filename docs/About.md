@@ -1,6 +1,6 @@
 ## About
 
-GEM is a living application developed by Paul Sijpkes.  Paul is a member of the [BOLD Team](https://bold.newcastle.edu.au) at the University of Newcastle, Australia.
+APEG is a web application developed by Paul Sijpkes.  Paul is a member of the [BOLD Lab](https://bold.newcastle.edu.au) at the University of Newcastle, Australia.
 
 ### Acknowledgements
 
@@ -10,6 +10,6 @@ Thanks for all those who have and are continuing to help and support the develop
 
 Robert Zinko, Bonnie McBain, Andrea Cassin, Ramsey Awad, Brid Monahan and the staff of the Joint Medical Program and Tim Connor for starting it all.
 
-And, of course, the **BOLD** testers:
+And, of course, the **BOLD Lab** testers:
 
 Andrew Yardy, Nick Barham, Mali Webb, Rebecca Wotzko and Luke Boulton.

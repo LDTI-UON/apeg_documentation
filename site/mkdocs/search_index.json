@@ -2,18 +2,28 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Peer Review Platform\n\n\nWhat is it?\n\n\nThe peer review platform (PRP) is a web application that allows students completing group work to evaluate each other's contribution to the group using a \nrubric\n or by giving a numeric 'grade'. The application is optimised for use with the \nBlackboard Learn VLE\n.\n\n\nThe application can be adapted to to any VLE that implements the IMS Global\n Learning Tools Interoperability\n (LTI) standard.  \n\n\nStudents\n\n\nAssessing your group's members using the peer review platform\n\n\nInstructors\n\n\nHow to add the LTI link to your Blackboard Course and configure the tool.\n\n\nTemplates\n\n\nSetting up the ExpressionEngine templates for the peer review platform.\n\n\nInstallation\n\n\nServer installation instructions of ExpressionEngine CMS and the Peer Review Add-on.\n\n\nContributing\n\n\nThe PRP is open-source, developers are welcome to contribute new features or add new hooks for your\nLMS or VLE.", 
+            "text": "APEG\n\n\nAPEG is a web application that allows students completing group work to evaluate each other's contribution to the group.\n\n\nAdaptable\n\n\nAPEG is template driven and built on open-source software \nlibraries\n, templates can easily be modified to provide custom content.\n\n\nPeer rEview\n\n\nPeer review is the evaluation of work by one or more people of similar competence to the producers of the work (\npeers\n) (\nWikipedia definition\n).  \n\n\nfor Groups\n\n\nGroups of students are able to assess each others contribution to a team using APEG.\n\n\nAPEG can incorporate a Blackboard\n \nrubric\n or allow students to supply a numeric 'grade' with comments. The application is optimised for use with the \nBlackboard Learn\n VLE\n.\n\n\nThe application can be adapted to to any VLE that implements the IMS Global\n Learning Tools Interoperability\n (LTI) standard.  \n\n\nStudents\n\n\nAssessing your group's members using the peer review platform\n\n\nInstructors\n\n\nHow to add the LTI link to your Blackboard Course and configure the tool.\n\n\nTemplates\n\n\nSetting up the ExpressionEngine templates.\n\n\nInstallation\n\n\nServer installation instructions of ExpressionEngine CMS and the Peer Review Add-on.\n\n\nContributing\n\n\nAPEG is open-source, developers are welcome to contribute new features or add new hooks for your LMS or VLE.", 
             "title": "Home"
         }, 
         {
-            "location": "/#peer-review-platform", 
-            "text": "", 
-            "title": "Peer Review Platform"
+            "location": "/#apeg", 
+            "text": "APEG is a web application that allows students completing group work to evaluate each other's contribution to the group.", 
+            "title": "APEG"
         }, 
         {
-            "location": "/#what-is-it", 
-            "text": "The peer review platform (PRP) is a web application that allows students completing group work to evaluate each other's contribution to the group using a  rubric  or by giving a numeric 'grade'. The application is optimised for use with the  Blackboard Learn VLE .  The application can be adapted to to any VLE that implements the IMS Global  Learning Tools Interoperability  (LTI) standard.", 
-            "title": "What is it?"
+            "location": "/#adaptable", 
+            "text": "APEG is template driven and built on open-source software  libraries , templates can easily be modified to provide custom content.", 
+            "title": "Adaptable"
+        }, 
+        {
+            "location": "/#peer-review", 
+            "text": "Peer review is the evaluation of work by one or more people of similar competence to the producers of the work ( peers ) ( Wikipedia definition ).", 
+            "title": "Peer rEview"
+        }, 
+        {
+            "location": "/#for-groups", 
+            "text": "Groups of students are able to assess each others contribution to a team using APEG.  APEG can incorporate a Blackboard   rubric  or allow students to supply a numeric 'grade' with comments. The application is optimised for use with the  Blackboard Learn  VLE .  The application can be adapted to to any VLE that implements the IMS Global  Learning Tools Interoperability  (LTI) standard.", 
+            "title": "for Groups"
         }, 
         {
             "location": "/#students", 
@@ -27,7 +37,7 @@
         }, 
         {
             "location": "/#templates", 
-            "text": "Setting up the ExpressionEngine templates for the peer review platform.", 
+            "text": "Setting up the ExpressionEngine templates.", 
             "title": "Templates"
         }, 
         {
@@ -37,17 +47,17 @@
         }, 
         {
             "location": "/#contributing", 
-            "text": "The PRP is open-source, developers are welcome to contribute new features or add new hooks for your\nLMS or VLE.", 
+            "text": "APEG is open-source, developers are welcome to contribute new features or add new hooks for your LMS or VLE.", 
             "title": "Contributing"
         }, 
         {
             "location": "/About/", 
-            "text": "About\n\n\nThe peer review platform is a living application developed by Paul Sijpkes.  Paul is a member of the \nBOLD Team\n at the University of Newcastle, Australia.\n\n\nAcknowledgements\n\n\nThanks for all those who have and are continuing to help and support the development and testing of this tool by trialling it in their courses and for having the vision and patience to try something new, or simply to test the pages over and over again!\n\n\nUniversity of Newcastle\n\n\nRobert Zinko, Bonnie McBain, Andrea Cassin, Ramsey Awad, Brid Monahan and the staff of the Joint Medical Program and Tim Connor for starting it all.\n\n\nAnd, of course, the \nBOLD\n testers:\n\n\nAndrew Yardy, Nick Barham, Mali Webb, Rebecca Wotzko and Luke Boulton.", 
+            "text": "About\n\n\nAPEG is a web application developed by Paul Sijpkes.  Paul is a member of the \nBOLD Lab\n at the University of Newcastle, Australia.\n\n\nAcknowledgements\n\n\nThanks for all those who have and are continuing to help and support the development and testing of this tool by trialling it in their courses and for having the vision and patience to try something new, or simply to test the pages over and over again!\n\n\nUniversity of Newcastle\n\n\nRobert Zinko, Bonnie McBain, Andrea Cassin, Ramsey Awad, Brid Monahan and the staff of the Joint Medical Program and Tim Connor for starting it all.\n\n\nAnd, of course, the \nBOLD Lab\n testers:\n\n\nAndrew Yardy, Nick Barham, Mali Webb, Rebecca Wotzko and Luke Boulton.", 
             "title": "About"
         }, 
         {
             "location": "/About/#about", 
-            "text": "The peer review platform is a living application developed by Paul Sijpkes.  Paul is a member of the  BOLD Team  at the University of Newcastle, Australia.", 
+            "text": "APEG is a web application developed by Paul Sijpkes.  Paul is a member of the  BOLD Lab  at the University of Newcastle, Australia.", 
             "title": "About"
         }, 
         {
@@ -57,7 +67,7 @@
         }, 
         {
             "location": "/About/#university-of-newcastle", 
-            "text": "Robert Zinko, Bonnie McBain, Andrea Cassin, Ramsey Awad, Brid Monahan and the staff of the Joint Medical Program and Tim Connor for starting it all.  And, of course, the  BOLD  testers:  Andrew Yardy, Nick Barham, Mali Webb, Rebecca Wotzko and Luke Boulton.", 
+            "text": "Robert Zinko, Bonnie McBain, Andrea Cassin, Ramsey Awad, Brid Monahan and the staff of the Joint Medical Program and Tim Connor for starting it all.  And, of course, the  BOLD Lab  testers:  Andrew Yardy, Nick Barham, Mali Webb, Rebecca Wotzko and Luke Boulton.", 
             "title": "University of Newcastle"
         }, 
         {

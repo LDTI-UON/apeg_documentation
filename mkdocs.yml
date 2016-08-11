@@ -1,9 +1,9 @@
-site_name: GEM - Group pEer Marking
+site_name: APEG
 theme: flatly
 repo_url: https://bitbucket.org/sijpkes/lti-peer-assessment
 site_author: Paul Sijpkes
 google_analytics: ["UA-80175715-1", "bold.newcastle.edu.au/padocs"]
-copyright: "<a href='mailto:paul.sijpkes@newcastle.edu.au;paul.sijpkes@gmail.com'>Developer: Paul Sijpkes <sup>&copy;2016</sup></a><br> <a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 0.6]</sub>
+copyright: "<a href='mailto:paul.sijpkes@newcastle.edu.au;paul.sijpkes@gmail.com'>Developer: Paul Sijpkes <sup>&copy;2016</sup></a><br> <a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 0.9]</sub>
 "
 extra:
     version: 3.0.0

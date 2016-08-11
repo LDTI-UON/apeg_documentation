@@ -1,8 +1,20 @@
-# GEM - Group pEer Marking
+# APEG
 
-## What is it?
+APEG is a web application that allows students completing group work to evaluate each other's contribution to the group.
 
-GEM is a web application that allows students completing group work to evaluate each other's contribution to the group using a [rubric](https://en.wikipedia.org/wiki/Rubric_(academic)) or by giving a numeric 'grade'. The application is optimised for use with the [Blackboard Learn VLE](http://anz.blackboard.com/sites/international/globalmaster/).
+### Adaptable
+
+APEG is template driven and built on open-source software [libraries](https://bitbucket.org/sijpkes/lti-peer-assessment), templates can easily be modified to provide custom content.
+
+### Peer rEview
+
+Peer review is the evaluation of work by one or more people of similar competence to the producers of the work ([peers](https://en.wiktionary.org/wiki/peer#Etymology_2)) ([Wikipedia definition](https://en.wikipedia.org/wiki/Peer_review)).  
+
+### for Groups
+
+Groups of students are able to assess each others contribution to a team using APEG.
+
+APEG can incorporate a Blackboard&trade; [rubric](https://en.wikipedia.org/wiki/Rubric_(academic)) or allow students to supply a numeric 'grade' with comments. The application is optimised for use with the [Blackboard Learn&trade; VLE](http://anz.blackboard.com/sites/international/globalmaster/).
 
 The application can be adapted to to any VLE that implements the IMS Global<sup>&reg;</sup> Learning Tools Interoperability<sup>&reg;</sup> (LTI) standard.  
 
@@ -19,4 +31,4 @@ Setting up the ExpressionEngine templates.
 Server installation instructions of ExpressionEngine CMS and the Peer Review Add-on.
 
 ## [Contributing](guides/Contributing)
-GEM is open-source, developers are welcome to contribute new features or add new hooks for your LMS or VLE.  
+APEG is open-source, developers are welcome to contribute new features or add new hooks for your LMS or VLE.  
