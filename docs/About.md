@@ -8,7 +8,7 @@ Thanks for all those who have and are continuing to help and support the develop
 
 #### University of Newcastle
 
-Robert Zinko, Bonnie McBain, Andrea Cassin, Ramsey Awad, Brid Monahan and the staff of the Joint Medical Program and Tim Connor for starting it all.
+Robert Zinko, Bonnie McBain, Andrea Cassin, Ramsey Awad, Judith Foggett, Brid Monahan and the staff of the Joint Medical Program and Tim Connor for starting it all.
 
 And, of course, the **BOLD Lab** testers:
 
