@@ -33,6 +33,7 @@ _Step by Step Guide_
   1. Select the link in your course
   2. Select the 'Grade' *or* 'Evaluate' button
   3. Select the radio button for each criterion
+      ![Sample Rubric](images/bb-students-rubric.png)
   4. Click *Save & Close*
   5. The student's score will appear next to their name
   6. Write a comment if required, otherwise add a hyphen '&ndash;' for the student in the comment box
@@ -55,6 +56,7 @@ _Step by Step Guide_
   Now for each of the people in your group:
   4. Select the 'Grade' *or* 'Evaluate' button
   5. Select the radio button for each criterion
+      ![Sample Rubric](images/bb-students-rubric.png)
   6. Click *Save & Close*
   7. The student's score will appear next to their name
   8. Write a comment if required, otherwise add a hyphen '&ndash;' for the student in the comment box
