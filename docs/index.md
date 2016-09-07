@@ -8,7 +8,7 @@ APEG is template driven and built on open-source software [libraries](https://bi
 
 ### Peer Evaluation
 
-Peer review is the evaluation of work by one or more people of similar competence to the producers of the work ([peers](https://en.wiktionary.org/wiki/peer#Etymology_2)) ([Wikipedia definition](https://en.wikipedia.org/wiki/Peer_review)).  
+Peer evaluation is the assessment or review of work by one or more people of similar competence to the producers of the work ([peers](https://en.wiktionary.org/wiki/peer#Etymology_2)) ([Wikipedia definition](https://en.wikipedia.org/wiki/Peer_review)).  
 
 ### for Groups
 
