@@ -78,6 +78,12 @@
                     
                         
 <li >
+    <a href="../../Administrators/">Administrators</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../../Contributing/">Contributing</a>
 </li>
 
@@ -184,121 +190,365 @@
 
 <h1 id="landing-page-example-template">Landing Page Example Template</h1>
 <pre><code class="html">&lt;!DOCTYPE html&gt;
+
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;{resource_title}&lt;/title&gt;
-    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  {exp:learning_tools_integration
-    prev_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_previous.gif'
-    next_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_next.gif'
-    first_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_rewind.gif'
-    last_link_url='https://uonline-stg.newcastle.edu.au/images/ci/ng/small_ffwd.gif'
-    plugins='lti_peer_assessment'}
-     {css_link_tags}
-    &lt;!-- imported from LMS --&gt;
-    &lt;style&gt;
-    .liItem {
-    padding: 25px;
-    }
-    textarea {
-    width: 22em;
-    height: 5em;
-    }
-    table {
-    min-width: 90% !important;
-    }
-    th {
-    height: 20px !important;
-    /*background-color: gray;*/
-    color: white;
-    padding: 8px;
-    }
-    td {
-    height: 20px;
-    padding: 8px;
-    }
-    tr:nth-child(odd) {
-    background-color: rgb(196, 225, 234);
-    }
-    /* verification form styles*/
-    .p_ver {
-    padding: 1.1em;
-    }
-    .p_ver &gt; input {
-    margin-left: 2em;
-    }
-    .not_matched {
-    background-color: rgb(200, 155, 180);
-    }
-    &lt;/style&gt;
-    {if error_messages != &quot;&quot;}
-        {error_messages}
-    {/if}
-    {if logged_in}
-    &lt;div class='locationPane'&gt;
-        &lt;div class='contentPane'&gt;
-            &lt;div class='pageTitle clearfix'&gt;
-                &lt;h1&gt;{resource_title}&lt;/h1&gt;
-                &lt;p&gt;{resource_link_description}&lt;/p&gt;
-                &lt;p&gt;&lt;span class='warningMsg'&gt;{general_message}&lt;/span&gt;&lt;/p&gt;
-                &lt;p&gt;&lt;a href='{launch_presentation_return_url}'&gt;Return to course:
-                {course_name}&lt;/a&gt;&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;div class='contentBox clearfix'&gt;
-                &lt;ul&gt;
-                    &lt;li class='clearfix liItem'&gt;{if is_instructor == 1}
-                                       &lt;h1&gt;General Settings&lt;/h1&gt;
-               &lt;p&gt;Group import &amp;amp; Plugin settings&lt;/p&gt;
-               &lt;hr /&gt;
-                &lt;br /&gt;
-                {general_settings_form}
-              &lt;hr/&gt;
-              &lt;br/&gt;
+    &lt;meta content=&quot;width=device-width, initial-scale=1&quot; name=&quot;viewport&quot;&gt;
+    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js&quot;&gt;
+    &lt;/script&gt;
+    &lt;link href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;link href=&quot;{theme_folder_url}learning_tools_integration/css/bootstrap-select.min.css&quot; rel=&quot;stylesheet&quot;&gt;
 
-                        &lt;h1&gt;Students registered for Peer Evaluation&lt;/h1&gt;
-                        &lt;div class='datalist' style='display: inline-block'&gt;
-                            {student_table}
-                        &lt;/div&gt;
-                        &lt;h3&gt;Give Students Access to Peer Evaluation&lt;/h3&gt;
-                        &lt;p&gt;{upload_student_list}&lt;/p&gt;
-                        &lt;h3&gt;Blackboard Rubrics&lt;/h3&gt;
-                        &lt;p&gt;Upload rubrics here for this course, attached
-                        rubrics will be used by students to grade their
-                        peers.&lt;/p&gt;
-                        &lt;p&gt;&lt;em&gt;To create and export a rubric from Blackboard,
-                        go to &lt;strong&gt;Organisation Tools &amp;rarr;
-                        Rubrics&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;&lt;br&gt;
-                        &lt;h4&gt;Upload a rubric&lt;/h4&gt;
-                        &lt;p&gt;{upload_blackboard_rubric}&lt;/p&gt;
-                    &lt;/li&gt;
-                    &lt;li class='clearfix liItem'&gt;
-                        &lt;h2&gt;Further Tools&lt;/h2&gt;
-                        &lt;h3&gt;Settings&lt;/h3&gt;{exp:lti_peer_assessment:settings}
-                        &lt;hr&gt;
-                        &lt;br&gt;
-                        &lt;h3&gt;Download Evaluations&lt;/h3&gt;
-                        &lt;h4&gt;&lt;em&gt;Download Evaluations as Excel Spreadsheet&lt;/em&gt;&lt;/h4&gt;{exp:lti_peer_assessment:download_excel}
-                    &lt;/li&gt;
-                    &lt;li style=&quot;list-style: none&quot;&gt;{if:else}
-                        &lt;h1&gt;{exp:lti_peer_assessment:group_name}&lt;/h1&gt;
-                        &lt;h2&gt;Your Evaluations of Other Group Members&lt;/h2&gt;
-                        &lt;h3&gt;Evaluation Form&lt;/h3&gt;
-                        &lt;p style='font-size: 1.5em'&gt;&lt;a href='https://bold-space.newcastle.edu.au/lti/index.php/cmns3530/marking_impact'&gt;Access this link for the Marking Impact document&lt;/a&gt;&lt;/p&gt;&lt;br&gt;
-                        {exp:lti_peer_assessment:form type='single'}
+    &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;
+    &lt;/script&gt;
+    &lt;script src=&quot;{theme_folder_url}learning_tools_integration/js/bootstrap-select.min.js&quot;&gt;
+    &lt;/script&gt;
+    &lt;script src=&quot;{theme_folder_url}learning_tools_integration/js/bootbox.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+&lt;style&gt;
+                body {
+                    font-family: 'verdana',Arial,Helvetica,sans-serif;
+                }
+                             .peer_comments {
+                                        font-size: 14pt;
+                                        padding: 0.8em;
+                             }
+                 h1, h2, h3, .baklink {
+                    text-align: center;
+                 }
+                             .peer_comments &gt; p{
+                                        font-family: &quot;Courier New&quot;, courier, mono-space;
+                    text-align: center;
+                             }
+                             .peer_grades {
+
+                             }
+                             .score_spacer {
+                                        width: 55px;
+                                        min-width: 55px;
+                                        display: inline-block;
+                             }
+                             .help_link {
+                                        padding-top: 1.4em;
+                             }
+
+&lt;/style&gt;
+&lt;div class='container-fluid'&gt;
+    &lt;div class='row'&gt;
+            {if lti_has_error}
+            &lt;div class='col-xs-12 col-sm-12 well col-xs-offset-0 col-sm-offset-0 col-lg-offset-0'&gt;
+                        {if lti_has_error == &quot;session expired&quot;}
+                                &lt;p&gt;Your session has expired, please return to the course and click the link again.&lt;/p&gt;
+                        {if:else}
+                                &lt;p&gt;{lti_has_error}&lt;/p&gt;
                         {/if}
-                    &lt;/li&gt;
-                    &lt;li class='liItem clearfix'&gt;
-                        &lt;p&gt;&lt;a href='{launch_presentation_return_url}'&gt;Return to
-                        course: {course_name}&lt;/a&gt;&lt;/p&gt;{/if}
-                    &lt;/li&gt;
-                &lt;/ul&gt;
+            &lt;/div&gt;
+            {/if}
+
+    {exp:learning_tools_integration prev_link_url='//localhost:9876/images/ci/ng/small_previous.gif' next_link_url='//uonline.newcastle.edu.au/images/ci/ng/small_next.gif' first_link_url='//uonline.newcastle.edu.au/images/ci/ng/small_rewind.gif' last_link_url='//uonline.newcastle.edu.au/images/ci/ng/small_ffwd.gif' plugins='lti_peer_assessment'} &lt;!-- {css_link_tags} --&gt; &lt;!-- imported from LMS --&gt;
+    {if error_messages != &quot;&quot;} {error_messages} {/if} {if logged_in_username}
+
+            &lt;div class='col-xs-12 col-sm-12 well col-xs-offset-0 col-sm-offset-0 col-lg-offset-0'&gt;
+                &lt;h1&gt;{resource_title}&lt;/h1&gt;
+
+
+                &lt;p&gt;{resource_link_description}&lt;/p&gt;
+
+
+                &lt;p&gt;&lt;span class='warningMsg'{general_message}&lt;/span&gt;
+                &lt;/p&gt;
+
+
+                &lt;p class='baklink'&gt;&lt;a href='{launch_presentation_return_url}'&gt;Return to course: {course_name}&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        {if is_instructor == 1}
+
+        &lt;div class='row'&gt;
+        {if group_id == 1}
+            &lt;div class='col-xs-12 col-sm-3 col-md-3 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 well'&gt;
+                &lt;h2&gt;General Settings&lt;/h2&gt;
+
+
+                &lt;div id='admin'&gt;
+                    &lt;h3&gt;Group import &amp;amp; Plugin settings&lt;/h3&gt;
+                    {general_settings_form}
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        {/if}
+
+            &lt;div class='col-xs-12 col-sm-8 col-md-6 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 well'&gt;
+                &lt;h1&gt;Students registered for Peer Evaluation&lt;/h1&gt;
+                &lt;!--style='display: inline-block'--&gt;
+                {student_table}
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+        &lt;div class='row'&gt;
+            &lt;div class='col-xs-12 col-sm-4 col-xs-offset-0 col-sm-offset-1 well'&gt;
+                &lt;h3&gt;Download Evaluations&lt;/h3&gt;
+
+
+                &lt;h4&gt;&lt;em&gt;Download Evaluations as Excel Spreadsheet&lt;/em&gt;&lt;/h4&gt;
+        &lt;p&gt;This spreadsheet contains a detailed breakdown of each peer assessment
+          and how marks for each rubric criteria (if specified) were distributed.&lt;/p&gt;
+                {exp:lti_peer_assessment:download_excel}
+
+        &lt;h4&gt;&lt;em&gt;Download Evaluations as a simple CSV&lt;/em&gt;&lt;/h4&gt;
+        &lt;p&gt;This is a basic option formatted in rows in a CSV.&lt;/p&gt;
+                {exp:lti_peer_assessment:download_csv}
+            &lt;/div&gt;
+
+
+            &lt;div class='col-xs-12 col-sm-4 col-md-4 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 well'&gt;
+                &lt;h3&gt;Give Students Access to Peer Evaluation {exp:lti_peer_assessment:help_link section='instructors' sub_section='manual_gradebook_upload' class='contextual_help_inline'}&lt;/h3&gt;
+                {upload_student_list}
             &lt;/div&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-    {/exp:learning_tools_integration}
+
+
+    &lt;div class='row'&gt;
+        &lt;div class='col-xs-12 col-sm-4 col-xs-offset-0 col-sm-offset-1 well'&gt;
+            &lt;h3&gt;Configure the Student View {exp:lti_peer_assessment:help_link section='instructors' sub_section='student_view' class='contextual_help_inline'}&lt;/h3&gt;
+            {exp:lti_peer_assessment:settings radio_labels='Yes: ,No: '} {form_open} {if group_id == '1'}
+
+            &lt;div class='well'&gt;
+                &lt;h4&gt;Admin Permissions&lt;/h4&gt;
+
+
+                &lt;p&gt;Instructors that can view Settings and Download assessment results&lt;br&gt;
+                {instructors_dropdown}&lt;/p&gt;
+            &lt;/div&gt;
+            {/if}
+
+            &lt;div class='well'&gt;
+                &lt;p&gt;Score calculation algorithm: {score_calculation_dropdown}&lt;/p&gt;
+
+
+                &lt;p&gt;&lt;br&gt;
+                &lt;a href='//sparkplus.com.au/factors/#spa-sapa-header' target='_blank'&gt;Further information on SPARK SPA and SAPA algorithms (Willey, K)&lt;/a&gt;
+                &lt;/p&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class='well'&gt;
+                &lt;p&gt;Students can view others' grades.&lt;br&gt;
+                {show_grade_column} &lt;label for='show_grade_column'&gt;{label} {radio}&lt;/label&gt; {/show_grade_column}&lt;/p&gt;
+
+
+                &lt;p&gt;Students can view others' comments.&lt;br&gt;
+                {show_comments} &lt;label for='show_comments'&gt;{label} {radio}&lt;/label&gt; {/show_comments}&lt;/p&gt;
+
+
+                &lt;p&gt;Students can see SAPA comparison.&lt;br&gt;
+                {show_sapa} &lt;label for='show_sapa'&gt;{label} {radio}&lt;/label&gt; {/show_sapa}&lt;/p&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class='well'&gt;
+                &lt;p&gt;Students assess themselves as well as the group (self assessment).&lt;br&gt;
+                &lt;em&gt;This option sets the first user in the list to the logged in student, all other students are greyed out until the student has self assessed&lt;/em&gt;&lt;br&gt;
+                {allow_self_assessment} &lt;label for='show_sapa'&gt;{label} {radio}&lt;/label&gt; {/allow_self_assessment}&lt;/p&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class='well'&gt;
+                &lt;p&gt;Self score is included in the mean calculation for the group.&lt;br&gt;
+                &lt;em&gt;This option includes the student's self assessment score in the mean calculation from the group score.&lt;/em&gt;&lt;br&gt;
+                {include_self_in_mean_score} &lt;label for='include_self_in_mean_score'&gt;{label} {radio}&lt;/label&gt; {/include_self_in_mean_score}&lt;/p&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class='well'&gt;
+                &lt;p&gt;Total maximum score for assessment.&lt;br&gt;
+                &lt;label for='total_score'&gt;Total maximum score for assessment {total_score}&lt;/label&gt;&lt;/p&gt;
+            &lt;/div&gt;
+
+
+            &lt;div class='well'&gt;
+                &lt;p&gt;{submit_button}&lt;/p&gt;
+            &lt;/div&gt;
+            {form_close}
+            &lt;script type='text/javascript'&gt;
+                                      {settings_javascript}
+            &lt;/script&gt; {/exp:lti_peer_assessment:settings}
+        &lt;/div&gt;
+
+
+        &lt;div class='col-xs-12 col-sm-4 col-md-5 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 well'&gt;
+            &lt;h3&gt;Blackboard Rubrics&lt;/h3&gt;
+
+            &lt;p&gt;Upload rubrics here for this course, attached rubrics will be used by students to grade their peers.&lt;/p&gt;
+
+            &lt;p&gt;&lt;em&gt;To create and export a rubric from Blackboard, go to &lt;strong&gt;Organisation Tools &amp;rarr; Rubrics&lt;/strong&gt;.&lt;/em&gt;
+            &lt;/p&gt;
+
+            &lt;h4&gt;Upload a rubric {exp:lti_peer_assessment:help_link section='instructors' sub_section='rubric' class='contextual_help_inline'}&lt;/h4&gt;
+            {upload_blackboard_rubric}
+        &lt;/div&gt;
+    &lt;/div&gt;
+    {if:else}
+
+    &lt;div class='row'&gt;
+        &lt;div class='col-xs-12 col-sm-12 col-lg-12'&gt;
+            &lt;h1&gt;{exp:lti_peer_assessment:group_name}&lt;/h1&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+
+    &lt;div class='row'&gt;
+
+        {exp:lti_peer_assessment:feedback type='rolling'}
+
+        {if user_has_assessed}
+        {if total &gt; 0}
+        &lt;div class='col-xs-12 col-md-6 col-lg-6 peer_grades well col-md-offset-1 col-xs-offset-0 col-lg-offset-1'&gt;
+            {if message}
+
+            &lt;p{message}&lt;/p&gt;
+            {if:else}
+
+
+            &lt;h2&gt;How your group rates you.&lt;/h2&gt;
+
+
+            &lt;table class='table table-striped'&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Criteria&lt;/th&gt;
+
+                        &lt;th&gt;Average Grade&lt;br&gt;
+                        &lt;span id='percToggle'&gt;View as Percentage&lt;/span&gt;&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+
+
+                &lt;tbody&gt;
+                {criteria_rows}
+                    &lt;tr&gt;
+                        &lt;th&gt;{criteria}&lt;/th&gt;
+
+                        &lt;td&gt;{mean} / {max}&lt;/td&gt;
+                    &lt;/tr&gt;
+                {/criteria_rows}
+                &lt;/tbody&gt;
+
+
+                &lt;tfoot&gt;
+                    &lt;tr class='total'&gt;
+                        &lt;th&gt;Total Mean Score&lt;/th&gt;
+
+                        &lt;td&gt;{total} / {total_max}&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tfoot&gt;
+            &lt;/table&gt;
+
+        &lt;/div&gt;
+        {/if}
+
+        &lt;div id='feedback' class='col-xs-12 col-md-4 col-lg-4 peer_comments well col-md-offset-1 col-xs-offset-0 col-lg-offset-1'&gt;
+            {if has_comments}
+
+        &lt;h2&gt;What your group is saying about you.&lt;/h2&gt;
+                {comments}
+
+                    &lt;p&gt;&amp;ldquo; {comment} &amp;rdquo;&lt;/p&gt;
+                {/comments}
+
+        &lt;/div&gt;
+            {/if}
+        {/if}
+
+     {if:else}
+        &lt;div id='message' class='col-xs-12 col-md-12 col-lg-12 well col-md-offset-0 col-xs-offset-0 col-lg-offset-0'&gt;
+            &lt;p&gt;Your peer's feedback and calculated grades will appear here once you have assessed your group.&lt;/p&gt;
+        &lt;/div&gt;
+      {/if}
+
+      {/exp:lti_peer_assessment:feedback}
+    &lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+    &lt;div class='row'&gt;
+        &lt;div class='col-xs-12 col-sm-6 col-lg-6 col-md-8 well col-xs-offset-0 col-sm-offset-1 col-md-offset-1 col-lg-offset-1'&gt;
+            &lt;h2&gt;Your Evaluations of Other Group Members {exp:lti_peer_assessment:help_link section='students'}&lt;/h2&gt;
+
+
+            &lt;h3&gt;Evaluation Form&lt;/h3&gt;
+
+
+            &lt;!-- &lt;p style='font-size: 1.5em'&gt;&lt;a href='peer_assessment/marking_impact'&gt;Access this link for the Marking Impact document&lt;/a&gt; --&gt;
+            &lt;/p&gt;
+            &lt;br&gt;
+            {exp:lti_peer_assessment:form type='rolling'}
+                {if form_open}
+                    &lt;!-- check if form is available --&gt;
+                    {if has_rubric}
+                        &lt;div id='rubricWrapper'&gt;
+                    {/if}
+
+                {form_open}
+
+                &lt;table class='table'&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;Name&lt;/th&gt;
+
+                            &lt;th&gt;Score&lt;/th&gt;
+
+                            &lt;th&gt;Comment&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+
+
+                    &lt;tbody&gt;
+                    {table_rows}
+                        &lt;tr {self_assess_id}&gt;
+                            &lt;td&gt;{group_member_screen_name}&lt;/td&gt;
+
+                            &lt;td&gt;{score_input}&lt;/td&gt;
+
+                            &lt;td&gt;{comment_textarea}&lt;/td&gt;
+                        &lt;/tr&gt;
+                     {/table_rows}
+                    &lt;/tbody&gt;
+                &lt;/table&gt;
+                {form_close}
+
+                {if has_rubric}
+                    {rubric_javascript}
+                        &lt;/div&gt;
+                {/if}
+                {if:else}
+                    &lt;p&gt;Thank you for your submission. To make another, please &lt;a href='{launch_presentation_return_url}'&gt;return to the course&lt;/a&gt;. &lt;/p&gt;
+                {/if}
+            {/exp:lti_peer_assessment:form}
+        &lt;/div&gt;
+    &lt;/div&gt;
+    {/if}
+
+    &lt;div class='row'&gt;
+        &lt;div class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xs-offset-0 col-sm-offset-0 col-lg-offset-0 well'&gt;
+            &lt;p&gt;&lt;a class='baklink' href='{launch_presentation_return_url}'&gt;Return to course: {course_name}&lt;/a&gt;
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script&gt;
+             $(document).ready(function() { $('select').selectpicker(); });
+    &lt;/script&gt; {/if} {/exp:learning_tools_integration}
 &lt;/body&gt;
+&lt;/html&gt;
+
 </code></pre>
 
 <p></html></p></div>
@@ -307,7 +557,7 @@
         <footer class="col-md-12">
             <hr>
             
-                <center><a href='mailto:paul.sijpkes@newcastle.edu.au;paul.sijpkes@gmail.com'>Developer: Paul Sijpkes <sup>&copy;2016</sup></a><br> <a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 1.0]</sub> </center>
+                <center><a href='mailto:paul.sijpkes@newcastle.edu.au;paul.sijpkes@gmail.com'>Developer: Paul Sijpkes</a><br> <a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 1.2]</sub> </center>
             
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>

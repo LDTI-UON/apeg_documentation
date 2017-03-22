@@ -78,6 +78,12 @@
                     
                         
 <li >
+    <a href="../Administrators/">Administrators</a>
+</li>
+
+                    
+                        
+<li >
     <a href="../Contributing/">Contributing</a>
 </li>
 
@@ -181,14 +187,6 @@
         
             <li><a href="#lti-link-settings">LTI Link Settings</a></li>
         
-            <li><a href="#configuration">Configuration</a></li>
-        
-            <li><a href="#activate-peer-assessment">Activate peer assessment</a></li>
-        
-            <li><a href="#add-a-rubric">Add a Rubric</a></li>
-        
-            <li><a href="#configure-student-view">Configure Student View</a></li>
-        
             <li><a href="#previewing-as-a-student">Previewing as a Student</a></li>
         
     
@@ -198,7 +196,7 @@
 
 <h1 id="instructors">Instructors</h1>
 <h2 id="adding-the-lti-link">Adding the LTI Link</h2>
-<p>Once the templates have been setup you will be supplied with the details for the LTI link as it appears in <a href="https://uonline.newcastle.edu.au/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_301_1">Blackboard Learn</a></p>
+<p>Once the templates have been setup by the <a href="../Administrators/">Administrator</a> you will be supplied with the details for the LTI link as it appears in <a href="https://uonline.newcastle.edu.au/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_301_1">Blackboard Learn</a></p>
 <h2 id="lti-link-settings">LTI Link Settings</h2>
 <p>Once the link has been placed in your course, you can manage settings as an Instructor by clicking the link.  To preview the tool, it is first necessary to <a href="http://en-us.help.blackboard.com/Learn/Instructor/Courses/Student_Preview#Keep_the_preview_user_and_data">keep your preview user</a> and subsequently
 <a href="#previewing-as-a-student">add your preview user to a group</a>.  Once in student preview, you will then see the group as a <a href="../Students">student</a>.</p>
@@ -213,55 +211,6 @@
 <h4 id="adding-a-description-single-line-only">Adding a Description (Single Line Only)</h4>
 <p>Note that there is a bug in blackboard that does not properly encode multi-line descriptions, so keep your description short and on a single line.</p>
 <p><img alt="Blackboard Learn LTI Link" src="../images/bb_lti_link_desc.png" title="1.1 Blackboard Learn LTI Link Description" /></p>
-<h2 id="configuration">Configuration</h2>
-<p>To configure the tool, access on the LTI link created earlier (ensure you are not in preview mode).</p>
-<h2 id="activate-peer-assessment">Activate peer assessment</h2>
-<p><em>This feature is primarily for developers and will be removed in future releases</em></p>
-<p><img alt="Activate Peer Assessment" src="../images/bb_activate_pa.png" /></p>
-<h3 id="gradebook-syncronisation">Gradebook Syncronisation</h3>
-<p>The first time you use the tool a message will appear asking if you would like to automatically sync the gradebook. The gradebook is accessed in <a href="http://en-us.help.blackboard.com/Learn/Instructor/Grade/Navigate_Grading">Blackboard Learn via the Grade Center</a>. This will update the user list from the Gradebook every time you access the link. Select the appropriate option.  </p>
-<p><img alt="Auto Sync Gradebook" src="../images/bb_auto_sync.png" /></p>
-<h3 id="manually-upload-the-student-gradebook">Manually Upload the Student Gradebook</h3>
-<p>If you choose 'No' for the above option, you will need to manually upload the student list.</p>
-<p>To manually upload the student list, first download the <a href="https://en-us.help.blackboard.com/Learn/Instructor/Interact/Course_Groups/080_Import_and_Export_Groups">student list from group export</a>. Ensure you select the <em>Groups and group members</em> and <em>Include header row</em> options. The file will be emailed to you. You will need to download it from the link in the email.</p>
-<p><img alt="Export Groups" src="../images/bb_export_groups.png" /></p>
-<p>In the instructor view, uploadt the csv file using the form.</p>
-<p><img alt="Manual Upload" src="../images/bb_upload_student_list.png" /></p>
-<h2 id="add-a-rubric">Add a Rubric</h2>
-<p><a href="https://en-us.help.blackboard.com/Learn/Instructor/Grade/Rubrics#Import_and_export_rubrics">Export a rubric from Blackboard Learn</a> that you would like the students to use to assess each other.</p>
-<p><img alt="Export a Rubric" src="../images/bb_export_rubric.png" /></p>
-<p>Upload the rubric ZIP file into the peer review tool using the form:
-<img alt="Upload a Rubric" src="../images/bb_upload_rubric.png" /></p>
-<p>Select the rubric from the dropdown and Attach. You can use Preview to preview the Rubric.</p>
-<p><em>Rubrics will <strong><em>not</em></strong> attach automatically, ensure you click Attach.</em></p>
-<p><img alt="Attach a Rubric" src="../images/bb_attach_rubric.png" /></p>
-<h2 id="configure-student-view">Configure Student View</h2>
-<p>There are several configuration options for the student view.</p>
-<ul>
-<li>Show grade column<ul>
-<li><em>students can see the grade others have given them</em></li>
-</ul>
-</li>
-<li>Show comments<ul>
-<li><em>students can see the comments others have given them</em></li>
-</ul>
-</li>
-<li>Turn on self assessment<ul>
-<li><em>students assess their own performance first, they cannot assess others until they have assessed themselves</em></li>
-<li><strong>When changing this setting you will need to resync the user groups (see <a href="#gradebook-syncronisation">Gradebook Syncronisation</a>)</strong></li>
-</ul>
-</li>
-<li>Include self in mean score<ul>
-<li><em>mean score includes the student's own score, for example if there are 5 in the group and the total score the group has given the student is 300 the final score will be 300/5 = 60 rather than 300/4 = 75</em></li>
-</ul>
-</li>
-<li>Total maximum score for assessment<ul>
-<li><em>used to calculate the percentage score, if you are not using a rubric you can set this here. The rubric total
-  score will override this setting if a rubric is attached</em></li>
-</ul>
-</li>
-</ul>
-<p><img alt="Peer Review Settings" src="../images/bb_pa_settings.png" /></p>
 <h2 id="previewing-as-a-student">Previewing as a Student</h2>
 <p>You can see the student view by adding your Blackboard preview user to a group and then syncronising the PRP with Blackboard.</p>
 <p><a href="https://www.blackboard.com/quicktutorials/bb9_groups_create_groups_add_students.htm">View a general guide at blackboard.com on how to add users to groups</a>.</p>
@@ -284,7 +233,7 @@
 </ul>
 </li>
 <li>
-<p>Add this user and ensure you now syncronise the groups with Blackboard using either <a href="#gradebook-syncronisation">Gradebook Syncronisation</a> or <a href="#manually-upload-the-student-gradebook">Manually Upload the Student Gradebook</a></p>
+<p>Depending on your setup you may need to <a href="../Administrators/#manually-upload-the-student-gradebook">Manually Upload the Student Gradebook</a>. The APEG will do this for you if correctly configured. If so, skip this step and continue to Step 7 otherwise speak to your <a href="../Administrators/">Administrator</a>.</p>
 </li>
 <li>
 <p>You can now use preview mode to access the LTI link created earlier and view the peer review group you added your previewuser to in step 4 to 6 earlier.</p>
@@ -295,7 +244,7 @@
         <footer class="col-md-12">
             <hr>
             
-                <center><a href='mailto:paul.sijpkes@newcastle.edu.au;paul.sijpkes@gmail.com'>Developer: Paul Sijpkes <sup>&copy;2016</sup></a><br> <a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 1.0]</sub> </center>
+                <center><a href='mailto:paul.sijpkes@newcastle.edu.au;paul.sijpkes@gmail.com'>Developer: Paul Sijpkes</a><br> <a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 1.2]</sub> </center>
             
             <center>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</center>
         </footer>
