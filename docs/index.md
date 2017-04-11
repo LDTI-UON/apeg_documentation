@@ -22,7 +22,7 @@ The application can be adapted to to any VLE that implements the IMS Global<sup>
 
 APEG uses the Self and Peer Assessment Resource Kit developed by Willey, Freeman and Gardner et. al. at UTS to provide a Self Performance Assessment (SPA) multiplier for instructors to apply to group work scores and a Self Assessment to Peer Assessment (SAPA) factor as a feedback score to students.
 
-This gives students an indicator of how they perceive their own performance in relation to the group's perception of their performance.
+The SAPA gives students an indicator of how they perceive their own performance in relation to the group's perception of their performance.
 
 A score greater than 1.0 indicates students over-rated their performance in comparison to the group.  
 
