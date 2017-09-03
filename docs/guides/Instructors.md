@@ -6,8 +6,7 @@ Once the templates have been setup by the [Administrator](Administrators.md) you
 
 ## LTI Link Settings
 
-Once the link has been placed in your course, you can manage settings as an Instructor by clicking the link.  To preview the tool, it is first necessary to [keep your preview user](http://en-us.help.blackboard.com/Learn/Instructor/Courses/Student_Preview#Keep_the_preview_user_and_data) and subsequently
-[add your preview user to a group](#previewing-as-a-student).  Once in student preview, you will then see the group as a [student](Students).
+Once the link has been placed in your course, you can manage settings as an Instructor by clicking the link.  To preview the tool, it is first necessary to activate the [student preview](https://help.blackboard.com/Learn/Instructor/Courses/Student_Preview) in Blackboard.  Once in student preview, click the LTI link you created above.
 
 ### Blackboard Learn
 
@@ -26,22 +25,41 @@ Note that there is a bug in blackboard that does not properly encode multi-line 
 
 ## Previewing as a Student
 
-You can see the student view by adding your Blackboard preview user to a group and then syncronising the PRP with Blackboard.
+You can preview using [Student Preview](https://help.blackboard.com/Learn/Instructor/Courses/Student_Preview) in Blackboard. Clicking the link will then show you the Preview Group.  Note that the Preview Group will not save evaluations.
 
-[View a general guide at blackboard.com on how to add users to groups](https://www.blackboard.com/quicktutorials/bb9_groups_create_groups_add_students.htm).
+![Group Preview](images/group_preview.png "Example of the Group Preview Page")
 
-1.  Ensure you Save your preview user by accessing the ![Preview Icon](images/bb_preview.png)  and then clicking the ![Settings](images/bb_prev_settings.png) button.
-2.  Exit preview mode.
-3. Access Users and Groups -> Groups.
-4.  Select Edit Group in the drop down:
-      ![Edit Group](images/bb_edit_group_dd.png)
+## Downloading Grades
 
-5.  Click **Add Users** and search for **Username -> Contains -> [your username]**.
-      * Your username will be:
-              **[your username] underscore preview user**,
+Access the [LTI link you created earlier](http://localhost:8000/guides/Instructors/#adding-the-lti-link) scroll down to 'Download Evaluations' and select the option you prefer.  
 
-        so the username ```jb123``` would have a preview user ```jb123_previewuser```
+_Use the CSV option if you're not getting the desired output in Excel_
 
-6. Depending on your setup you may need to [Manually Upload the Student Gradebook](Administrators.md#manually-upload-the-student-gradebook). The APEG will do this for you if correctly configured. If so, skip this step and continue to Step 7 otherwise speak to your [Administrator](Administrators.md).
+## Clearing &amp; Unlocking Submissions
 
-7. You can now use preview mode to access the LTI link created earlier and view the peer review group you added your previewuser to in step 4 to 6 earlier.
+To unlock a student submission, find the students id in the table and click 'unlock'. ![Unlock](images/unlock_btn.png "Unlock Button in student table")
+
+To completely clear and remove a submission, click the ![Clear](images/clear_btn.png) button next to the student's name.
+
+## Changing Display Options
+
+There are a number of display options for comments and algorithm type.
+
+### Grading Algorithms
+
+Currently the choice is between a standard Mean algorithm and SPARK's calculation algorithm, see the [home page](/) for information on each of these algorithms.
+
+### Display options for comments and miscellaneous
+
+These options are self explanatory, in the image below the total maximum score has been calculated based on the rubric.  This is done automagically when the rubric is imported to APEG.
+
+![Display Options](images/options.png)
+
+<script>
+    var links = document.querySelectorAll( 'a' );  
+    for (var i = 0, length = links.length; i < length; i++) {  
+        if (links[i].hostname != window.location.hostname) {
+            links[i].target = '_blank';
+        }
+    }
+</script>
