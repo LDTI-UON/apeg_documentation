@@ -57,21 +57,24 @@
   display: inline-block;
   padding: 0.5em;
 }
+.acronym {
+  font-size: 1.3em; font-weight: bold;
+}
 </style>
 
 # APEG
 
 APEG is a web application that allows students completing group work to evaluate each other's contribution to the group.
 
-### Adaptable
+<span class='acronym'>A</span>__daptable__
 
 APEG is HTML template driven via the [ExpressionEngine CMS](https://expressionengine.com/) and built on open-source software [libraries](https://github.com/BOLDLab/lti_peer_assessment), templates can easily be modified to provide custom content.
 
-### Peer Evaluation
+<span class='acronym'>P</span>__eer__ <span class='acronym'>E</span>__valuation__
 
 Peer evaluation is the assessment or review of work by one or more people of similar competence to the producers of the work ([peers](https://en.wiktionary.org/wiki/peer#Etymology_2)) ([Wikipedia definition](https://en.wikipedia.org/wiki/Peer_review)).  
 
-### for Groups
+__for__    <span class='acronym'>G</span>__roups__
 
 Groups of students are able to assess each others' contribution to a team using APEG.
 
@@ -84,7 +87,10 @@ The application can be adapted to to any VLE that implements the IMS Global<sup>
 APEG can be used in different modes, currently there is a simple 'mean' mode and an advanced SPA (Self Performance Assessment) mode.
 
 #### <u>Mean Mode</u> ####
-In the mean mode, each team member is simply given the average score they received from the group.
+In the mean mode, each team member is given the average score they received from the group.
+
+__When to use mean mode__
+Mean mode is best if students are just required to grade each other's work performance in the team without any self-assessment.
 
 <div class='sqrt'>
 <span class='tms'>Individual Team Member's score </span><span class="radical tms"> =</span>
@@ -96,10 +102,17 @@ In the mean mode, each team member is simply given the average score they receiv
 
 #### <u>SPA Mode</u> ####
 The SPA mode compares the each team members' self assessment against the rating given by the rest of the group.
+SPA mode is best
 
 This mode uses equations developed by [Willey, Freeman and Gardner (2010)](http://www.tandfonline.com/doi/full/10.1080/03043797.2010.490577?scroll=top&needAccess=true) at UTS, Sydney, Australia.
 
-The SPA mode provides multiplier for instructors to apply to group work scores and a Self Assessment to Peer Assessment (SAPA) factor as a feedback score to students.
+__When to use SPA mode__
+
+SPA mode is best used when the instructor would like to give students a group mark for an artefact they have produced. The SPA score generated is then used as a multiplier of the group mark for each individual in the group. High and low contributors to group work are therefore awarded according to their perceived group contribution.
+
+__Details__
+
+The SPA mode provides a multiplier for instructors to apply to group work scores and a Self Assessment to Peer Assessment (SAPA) factor as a feedback score to students.
 
 A SPA score equal to or greater than 1.0 indicates the student contributed the maximum amount possible, based on the rest of the group's ratings, to the group work.  
 
@@ -125,13 +138,16 @@ A SAPA score greater than 1.0 indicates students over-rated their performance in
 
 A SAPA score less than 1.0 indicates students under-rated their performance in comparison to the group.
 
-For detailed information on these equations please see the [Spark<sup>PLUS</sup> documentation](http://sparkplus.com.au/factors/).   
+For further information on these equations please see the [Spark<sup>PLUS</sup> documentation](http://sparkplus.com.au/factors/).   
 
 ## [Students](guides/Students)
 Assessing your group's members using the peer review platform
 
 ## [Instructors](guides/Instructors)
-How to add the LTI link to your Blackboard Course and configure the tool.
+How to check student access, download grades and setup preferences.
+
+## [Course Builders](guides/Course-Builders)
+How to add the LTI link to your Blackboard Course
 
 ## [Templates](guides/Templates)
 Setting up the ExpressionEngine templates.

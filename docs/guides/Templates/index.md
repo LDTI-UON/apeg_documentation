@@ -12,12 +12,6 @@ For details on how to setup to setup templates in ExpressionEngine check the [Te
 
 _Landing page for students and instructors, renders default views as described in the [Instructors](../Instructors.md) and [Student](../Students.md) guides_
 
-### Marking Guide
-
-[Marking Guide](marking-guide.md)
-
-_Marking guide for students, this is can be optionally linked from the index page._
-
 ### Rubric
 
 [Rubric](rubric.md)
