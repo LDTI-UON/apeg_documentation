@@ -148,12 +148,3 @@ How to check student access, download grades and setup preferences.
 
 ## [Course Builders](guides/Course-Builders)
 How to add the LTI link to your Blackboard Course
-
-## [Templates](guides/Templates)
-Setting up the ExpressionEngine templates.
-
-## [Installation](guides/Installation)
-Server installation instructions of ExpressionEngine CMS and the Peer Review Add-on.
-
-## [Contributing](guides/Contributing)
-APEG is open-source, developers are welcome to contribute new features or add new hooks for your LMS or VLE.  

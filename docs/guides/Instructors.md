@@ -8,15 +8,12 @@ You can preview using [Student Preview](https://help.blackboard.com/Learn/Instru
 
 ## Downloading Grades
 
-Access the [LTI link you created earlier](http://localhost:8000/guides/Instructors/#adding-the-lti-link) scroll down to 'Download Evaluations' and select the option you prefer.  
+Access the [LTI link you created earlier](Course-Builders/) scroll down to 'Download Evaluations' and click <button>Download</button>.  
 
-_Use the CSV option if you're not getting the desired output in Excel_
 
 ## Clearing &amp; Unlocking Submissions
 
 To unlock a student submission, find the students id in the table and click 'unlock'. ![Unlock](images/unlock_btn.png "Unlock Button in student table")
-
-To completely clear and remove a submission, click the ![Clear](images/clear_btn.png) button next to the student's name.
 
 ## Changing Display Options
 

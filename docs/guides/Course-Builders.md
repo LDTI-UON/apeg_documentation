@@ -2,6 +2,12 @@
 
 ## Adding the LTI Link
 
+### Using the Bookmarklet
+
+University of Newcastle staff can now use the [APEG setup bookmarklet](https://bold.newcastle.edu.au/bookmarklets/apeg/).
+
+### Manual
+
 Once the templates have been setup by the [Administrator](Administrators.md) you will be supplied with the details for the LTI link as it appears in [Blackboard Learn](https://uonline.newcastle.edu.au/webapps/portal/execute/tabs/tabAction?tab_tab_group_id=_301_1)
 
 ## LTI Link Settings

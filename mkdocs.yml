@@ -1,5 +1,5 @@
 site_name: APEG
-theme: flatly
+theme: material
 repo_url: https://github.com/BOLDLab/lti_peer_assessment
 site_author: Paul Sijpkes
 google_analytics: ["UA-80175715-1", "bold.newcastle.edu.au/padocs"]
