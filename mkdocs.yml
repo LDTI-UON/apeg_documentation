@@ -3,7 +3,6 @@ theme: material
 repo_url: https://github.com/BOLDLab/learning_tools_integration
 site_author: Paul Sijpkes
 google_analytics: ["UA-80175715-1", "bold.newcastle.edu.au/padocs"]
-copyright: "<a href='mailto:paul.sijpkes@newcastle.edu.au;paul.sijpkes@gmail.com'>Developer: Paul Sijpkes</a><br> <a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 1.3]</sub>
-"
+copyright: "<a href='https://bold.newcastle.edu.au'>The BOLD Team, The University of Newcastle, Australia</a></sub><br><sub><em>A living document</em> [rev. 1.4]</sub>"
 extra:
     version: 0.8.29
